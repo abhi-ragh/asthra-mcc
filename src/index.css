@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", serif;
-  background-color: #121212; /* Dark but not pitch black */
+  background-color: #fffdf0;
   color: white;
 }
 
@@ -21,43 +21,21 @@ body {
   overflow: hidden;
 }
 
-/* Background Video */
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* Vignette Overlay */
-.vignette-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.8)); /* Stronger vignette effect */
-  z-index: 0;
-}
-
 /* Logo Container */
 .logo-container {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-out;
 }
 
 /* Fest Logo */
 .fest-logo {
-  max-width: 400px;
+  max-width: 550px;
   width: 100%;
   height: auto;
 }
@@ -67,27 +45,108 @@ body {
   opacity: 0;
 }
 
+/* Cloud Positioning */
+.cloud-left-top {
+  position: absolute;
+  bottom: 60%;
+  right: 60%;
+  width: 60%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.cloud-left-mid {
+  position: absolute;
+  bottom: 0px;
+  right: 75%;
+  width: 60%;
+  z-index: 5;
+  animation: float 8s infinite ease-in-out;
+}
+
+.cloud-left-bottom {
+  position: absolute;
+  top: 60%;
+  right: 55%;
+  width: 60%;
+  rotate: 90deg;
+  animation: float 7s infinite ease-in-out;
+}
+
+.cloud-right-top {
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  width: 60%;
+  animation: float 7s infinite ease-in-out;
+}
+
+.cloud-right-mid {
+  position: absolute;
+  bottom: 0px;
+  left: 80%;
+  width: 60%;
+  z-index: 5;
+  animation: float 9s infinite ease-in-out;
+}
+
+.cloud-right-bottom {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  width: 60%;
+  rotate: 265deg;
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.dates{
+  font-size: 4rem;
+  color: #ff6b35;
+  line-height: 80%;
+  text-align: center;
+  margin-top: 90vh;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.dates.hidden {
+  opacity: 0;
+}
+
 /* About Section */
 .About {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #1a1a1a, #121212); /* Gradient transition */
+  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
 }
 
 .About h1 {
-  font-size: 3rem;
-  color: #ffffff;
+  font-size: 9rem;
+  color: #161616;
   margin-right: 20px;
 }
 
 .About p {
   font-size: 1.2rem;
-  color: #cccccc;
-  max-width: 600px;
+  color: #2b2b2b;
+  margin-top: 20px;
+  max-width: 1100px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 /* Performances Section */
@@ -96,7 +155,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #121212, #1a1a1a); /* Gradient transition */
+  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
 }
 
 .performances-img {
@@ -110,7 +169,7 @@ body {
 /* Sponsors Section */
 .Sponsors {
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #1a1a1a, #121212); /* Gradient transition */
+  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
   text-align: center;
 }
 
@@ -150,7 +209,7 @@ body {
 /* Contact Section */
 .Contact {
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #121212, #1a1a1a); /* Gradient transition */
+  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
   text-align: center;
 }
 
@@ -169,4 +228,119 @@ body {
 /* Smooth Transitions Between Sections */
 section {
   transition: background 0.5s ease;
+}
+
+/* Navbar Styles */
+.nav-links {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: #121212 !important;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 40px;
+  background: #ff6b35;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+.nav-item:hover .nav-link {
+  color: white !important;
+}
+
+/* Update clouds container to be fixed */
+.clouds-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Update cloud base styles */
+.cloud {
+  position: absolute;
+  width: 60%;
+  transition: all 0.5s ease-out;
+  opacity: calc(1 - (var(--scroll-progress) * 1.5));
+  transform-origin: center center;
+}
+
+/* Left clouds movement */
+.cloud-left-top {
+  bottom: 60%;
+  right: calc(60% - (var(--scroll-progress) * 30%));
+  animation: float 6s infinite ease-in-out;
+}
+
+.cloud-left-mid {
+  bottom: 0;
+  right: calc(75% - (var(--scroll-progress) * 37.5%));
+  animation: float 8s infinite ease-in-out;
+}
+
+.cloud-left-bottom {
+  top: 60%;
+  right: calc(55% - (var(--scroll-progress) * 27.5%));
+  rotate: 90deg;
+  animation: float 7s infinite ease-in-out;
+}
+
+/* Right clouds movement */
+.cloud-right-top {
+  bottom: 60%;
+  left: calc(60% - (var(--scroll-progress) * 30%));
+  animation: float 7s infinite ease-in-out;
+}
+
+.cloud-right-mid {
+  bottom: 0;
+  left: calc(80% - (var(--scroll-progress) * 40%));
+  animation: float 9s infinite ease-in-out;
+}
+
+.cloud-right-bottom {
+  top: 60%;
+  left: calc(55% - (var(--scroll-progress) * 27.5%));
+  rotate: 265deg;
+  animation: float 6s infinite ease-in-out;
+}
+
+.dragon{
+  width: 400px;
+  margin-left: 1px;
+  margin-right: 10px;
+}
+
+.about-heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

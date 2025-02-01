@@ -5,17 +5,20 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-transparent" style={styles.navbar}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <img src="/assets/logos/logo.png" alt="Fest Logo" width="50" />
-        </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to="/day1">Day 1</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/day2">Day 2</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/day3">Day 3</Link></li>
+        <div className="d-flex justify-content-center w-100">
+          <ul className="navbar-nav nav-links">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/events">Events</Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About Us</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -25,12 +28,12 @@ const Navbar = () => {
 
 const styles = {
   navbar: {
-    position: 'absolute', // Positions the navbar on top of the video
+    position: 'fixed',
     top: 0,
-    left: 0,
     width: '100%',
-    zIndex: 2, // Ensures the navbar is above the logo and video
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+    zIndex: 1000,
+    backgroundColor: 'rgba(20, 20, 20, 0.9)',
+    padding: '15px 0'
   },
 };
 

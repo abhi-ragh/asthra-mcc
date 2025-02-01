@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
 const Home = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      // Calculate scroll progress as a percentage (0 to 1)
+      const scrollHeight = window.innerHeight * 0.8; // Reduced scroll distance
+      const currentScroll = window.scrollY;
+      const progress = Math.min(currentScroll / scrollHeight, 1);
+      setScrollProgress(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -18,28 +18,44 @@ const Home = () => {
 
   return (
     <div>
+        <div 
+          className="clouds-container"
+          style={{ '--scroll-progress': scrollProgress }}
+        >
+            <img src="/assets/images/Cloud 2.png" alt="Cloud 1" className="cloud cloud-left-top" />
+            <img src="/assets/images/Cloud 1.png" alt="Cloud 2" className="cloud cloud-left-mid" />
+            <img src="/assets/images/Cloud 2.png" alt="Cloud 3" className="cloud cloud-left-bottom" />
+            <img src="/assets/images/Cloud 2-flip.png" alt="Cloud 4" className="cloud cloud-right-top" />
+            <img src="/assets/images/Cloud 1-flip.png" alt="Cloud 5" className="cloud cloud-right-mid" />
+            <img src="/assets/images/Cloud 2-flip.png" alt="Cloud 6" className="cloud cloud-right-bottom" />
+        </div>
+
         <div className="home-container">
-            {/* Background Video */}
-            <video autoPlay muted loop className="background-video">
-                <source src="/assets/videos/background.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            {/* Vignette Overlay */}
-            <div className="vignette-overlay"></div>
-
-            {/* Centered Logo */}
-            <div className={`logo-container ${isScrolled ? 'hidden' : ''}`}>
+            <div className={`logo-container ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
                 <img
                 src="/assets/logos/logo.png"
                 alt="Fest Logo"
                 className="fest-logo"
                 />
             </div>
+            <div className={`dates ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
+                  <p> FEB 22, 24, 25</p>
+            </div>
         </div>
+
         <div className='About'>
-            <h1> About US </h1>
-            <p> Asthra is a celebration of innovation, creativity, and progress, bringing together bright minds to explore the limitless possibilities of technology and invention. As our college's flagship fest, Asthra serves as a platform for students to showcase their talents, collaborate on groundbreaking ideas, and push the boundaries of imagination. With each passing year, it continues to inspire a shared vision of growth and excellence, uniting everyone in the spirit of discovery and achievement. </p>
+          <div className='about-heading'>
+            <h1> BEHOLD </h1>
+            <img src='/assets/images/dragon.png' alt='Dragon' className='dragon' />
+            <h1> ASTHRA </h1>
+          </div>         
+          <p> <b>Asthra</b>—the crown jewel of Musaliar College of Engineering—is more than just a fest; it’s a symphony of innovation, creativity, and limitless ambition. Every year, it transforms our campus into a vibrant playground of ideas, where brilliant minds collide, collaborate, and craft the future.  
+
+As our flagship techno-cultural extravaganza, Asthra is where technology meets artistry, logic embraces imagination, and raw talent takes center stage. From adrenaline-pumping competitions and cutting-edge workshops to mesmerizing performances and awe-inspiring exhibitions, every moment is designed to ignite curiosity and fuel passion.  
+
+With each passing year, Asthra grows—not just in scale, but in spirit. It is a celebration of bold ideas, daring dreams, and the relentless pursuit of excellence. It unites students, innovators, and visionaries in a shared journey of discovery, achievement, and unbridled joy.  
+
+Step into Asthra, where the future is not just imagined—it’s engineered, performed, and celebrated. </p>
         </div>
         <div className='Performances'>
             <img src="/assets/images/img1.jpg" alt="Performances" className="performances-img" />
