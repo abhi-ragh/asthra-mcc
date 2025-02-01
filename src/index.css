@@ -1,0 +1,172 @@
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  background-color: #121212; /* Dark but not pitch black */
+  color: white;
+}
+
+/* Ensure the video covers the entire page */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home Container */
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Vignette Overlay */
+.vignette-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.8)); /* Stronger vignette effect */
+  z-index: 0;
+}
+
+/* Logo Container */
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* Fest Logo */
+.fest-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Hide Logo on Scroll */
+.logo-container.hidden {
+  opacity: 0;
+}
+
+/* About Section */
+.About {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #1a1a1a, #121212); /* Gradient transition */
+}
+
+.About h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.About p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+/* Performances Section */
+.Performances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #121212, #1a1a1a); /* Gradient transition */
+}
+
+.performances-img {
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Sponsors Section */
+.Sponsors {
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #1a1a1a, #121212); /* Gradient transition */
+  text-align: center;
+}
+
+.Sponsors h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.Sponsors h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+/* Sponsor Headings */
+.Sponsors h2.platinum {
+  color: #e5e4e2; /* Platinum color */
+}
+
+.Sponsors h2.gold {
+  color: #ffd700; /* Gold color */
+}
+
+.Sponsors h2.silver {
+  color: #c0c0c0; /* Silver color */
+}
+
+.Sponsors img {
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.Sponsors img:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+/* Contact Section */
+.Contact {
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #121212, #1a1a1a); /* Gradient transition */
+  text-align: center;
+}
+
+.Contact h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.Contact p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 10px 0;
+}
+
+/* Smooth Transitions Between Sections */
+section {
+  transition: background 0.5s ease;
+}
