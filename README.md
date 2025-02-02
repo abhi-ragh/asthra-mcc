@@ -1,4 +1,3 @@
-```markdown
 # Asthra 2025 - Official Techno-Cultural Fest Website
 
 ![Asthra Banner](/public/assets/logos/logo.png)
@@ -73,7 +72,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - All contributors and participants
 
 ---
-
-**Developed with ❤️ by [Abhiragh]**  
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-lightgrey)](https://github.com/abhi-ragh)
-```
