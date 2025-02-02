@@ -1,15 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Home = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [isAboutVisible, setIsAboutVisible] = useState(false);
+  const [isNinaVisible, setIsNinaVisible] = useState(false);
+  const [isMatadoriaVisible, setIsMatadoriaVisible] = useState(false);
+  
+  const aboutRef = useRef();
+  const ninaRef = useRef();
+  const matadoriaRef = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
-      // Calculate scroll progress as a percentage (0 to 1)
-      const scrollHeight = window.innerHeight * 0.8; // Reduced scroll distance
+      const scrollHeight = window.innerHeight * 0.8;
       const currentScroll = window.scrollY;
       const progress = Math.min(currentScroll / scrollHeight, 1);
       setScrollProgress(progress);
+
+      // Visibility checks
+      if (aboutRef.current) {
+        const rect = aboutRef.current.getBoundingClientRect();
+        setIsAboutVisible(rect.top < window.innerHeight * 0.8);
+      }
+      if (ninaRef.current) {
+        const rect = ninaRef.current.getBoundingClientRect();
+        setIsNinaVisible(rect.top < window.innerHeight * 0.8);
+      }
+      if (matadoriaRef.current) {
+        const rect = matadoriaRef.current.getBoundingClientRect();
+        setIsMatadoriaVisible(rect.top < window.innerHeight * 0.8);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -39,11 +59,14 @@ const Home = () => {
                 />
             </div>
             <div className={`dates ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
-                  <p> FEB 22, 24, 25</p>
+                  <p> FEB 22 24 25</p>
             </div>
         </div>
 
-        <div className='About'>
+        <div 
+          className={`About ${isAboutVisible ? 'visible' : ''}`} 
+          ref={aboutRef}
+        >
           <div className='about-heading'>
             <h1> BEHOLD </h1>
             <img src='/assets/images/dragon.png' alt='Dragon' className='dragon' />
@@ -57,9 +80,17 @@ With each passing year, Asthra grows—not just in scale, but in spirit. It is a
 
 Step into Asthra, where the future is not just imagined—it’s engineered, performed, and celebrated. </p>
         </div>
+
         <div className='Performances'>
-            <img src="/assets/images/img1.jpg" alt="Performances" className="performances-img" />
-            <img src="/assets/images/img1.jpg" alt="Performances" className="performances-img" />
+            <p> PERFORMING LIVE @ MCC </p>
+            <div className={`nina ${isNinaVisible ? 'visible' : ''}`} ref={ninaRef}>
+              <img src="/assets/logos/nina.png" alt="Performances" className="nina-img fade-left" />
+              <img src="/assets/logos/feb24.png" alt="Performances" className="feb24 fade-right" />
+            </div> 
+            <div className={`matadoria ${isMatadoriaVisible ? 'visible' : ''}`} ref={matadoriaRef}>
+              <img src="/assets/logos/feb25.png" alt="Performances" className="feb25 fade-left" />
+              <img src="/assets/logos/matadoria.png" alt="Performances" className="matadoria-img fade-right" />
+            </div>
         </div>
 
         <div className='Sponsors'>

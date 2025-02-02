@@ -1,4 +1,11 @@
 /* index.css */
+@font-face {
+  font-family: 'Square';
+  src: url('/public/assets/fonts/square.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -109,7 +116,8 @@ body {
 }
 
 .dates{
-  font-size: 4rem;
+  font-size: 2.5rem;
+  font-family: 'Square', sans-serif;
   color: #ff6b35;
   line-height: 80%;
   text-align: center;
@@ -122,7 +130,21 @@ body {
   opacity: 0;
 }
 
-/* About Section */
+/* About Section Transition */
+.About {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 
+    opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.About.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Adjust existing About styles */
 .About {
   position: relative;
   z-index: 1;
@@ -131,11 +153,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
+  background: linear-gradient(to bottom, #fffdf0, #ffffff);
+  transition-delay: 0.9s; /* Slight delay for better effect */
 }
 
 .About h1 {
-  font-size: 9rem;
+  font-size: 6rem;
   color: #161616;
   margin-right: 20px;
 }
@@ -154,16 +177,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 10%;
   background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
 }
 
-.performances-img {
-  width: 80%;
-  max-width: 800px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+.Performances p {
+  color: black;
+  font-family: 'Square', sans-serif;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.matadoria-img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.matadoria{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.feb25{
+  width: 50%;
+}
+
+.nina {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #ffae00;
+}
+
+.nina-img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feb24 {
+  width: 50%;
 }
 
 /* Sponsors Section */
@@ -288,14 +345,14 @@ section {
 .cloud {
   position: absolute;
   width: 60%;
-  transition: all 0.5s ease-out;
-  opacity: calc(1 - (var(--scroll-progress) * 1.5));
+  transition: all 0.8s ease-out;
+  opacity: calc(1 - (var(--scroll-progress) * 1));
   transform-origin: center center;
 }
 
 /* Left clouds movement */
 .cloud-left-top {
-  bottom: 60%;
+  bottom: calc(60% - (var(--scroll-progress) * 30%));
   right: calc(60% - (var(--scroll-progress) * 30%));
   animation: float 6s infinite ease-in-out;
 }
@@ -307,7 +364,7 @@ section {
 }
 
 .cloud-left-bottom {
-  top: 60%;
+  top: calc(60% - (var(--scroll-progress) * 27.5%));
   right: calc(55% - (var(--scroll-progress) * 27.5%));
   rotate: 90deg;
   animation: float 7s infinite ease-in-out;
@@ -315,7 +372,7 @@ section {
 
 /* Right clouds movement */
 .cloud-right-top {
-  bottom: 60%;
+  bottom: calc(60% - (var(--scroll-progress) * 30%));
   left: calc(60% - (var(--scroll-progress) * 30%));
   animation: float 7s infinite ease-in-out;
 }
@@ -327,7 +384,7 @@ section {
 }
 
 .cloud-right-bottom {
-  top: 60%;
+  top: calc(60% - (var(--scroll-progress) * 27.5%));
   left: calc(55% - (var(--scroll-progress) * 27.5%));
   rotate: 265deg;
   animation: float 6s infinite ease-in-out;
@@ -340,7 +397,56 @@ section {
 }
 
 .about-heading{
+  font-family: 'Square', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+/* Base styles for fade animations */
+.fade-left, .fade-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-right {
+  transform: translateX(100px);
+}
+
+/* Trigger animations when parent becomes visible */
+.nina.visible .fade-left,
+.matadoria.visible .fade-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nina.visible .fade-right,
+.matadoria.visible .fade-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Add delay to stagger animations */
+.nina.visible .nina-img {
+  transition-delay: 0.2s;
+}
+
+.nina.visible .feb24 {
+  transition-delay: 0.4s;
+}
+
+.matadoria.visible .feb25 {
+  transition-delay: 0.2s;
+}
+
+.matadoria.visible .matadoria-img {
+  transition-delay: 0.4s;
+}
+
+/* Ensure containers don't clip during animation */
+.nina, .matadoria {
+  overflow: visible;
 }
