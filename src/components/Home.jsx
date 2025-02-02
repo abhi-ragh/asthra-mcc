@@ -1,14 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
 
 const Home = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isAboutVisible, setIsAboutVisible] = useState(false);
   const [isNinaVisible, setIsNinaVisible] = useState(false);
   const [isMatadoriaVisible, setIsMatadoriaVisible] = useState(false);
+  const [isSponsorsVisible, setIsSponsorsVisible] = useState(false);
+  const [isContactVisible, setIsContactVisible] = useState(false);
   
   const aboutRef = useRef();
   const ninaRef = useRef();
   const matadoriaRef = useRef();
+  const sponsorsRef = useRef();
+  const contactRef = useRef();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,12 +35,19 @@ const Home = () => {
         const rect = matadoriaRef.current.getBoundingClientRect();
         setIsMatadoriaVisible(rect.top < window.innerHeight * 0.8);
       }
+      if (sponsorsRef.current) {
+        const rect = sponsorsRef.current.getBoundingClientRect();
+        setIsSponsorsVisible(rect.top < window.innerHeight * 0.8);
+      }
+      if (contactRef.current) {
+        const rect = contactRef.current.getBoundingClientRect();
+        setIsContactVisible(rect.top < window.innerHeight * 0.8);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   return (
     <div>
         <div 
@@ -93,27 +105,77 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             </div>
         </div>
 
-        <div className='Sponsors'>
-            <h1> Our Sponsors </h1>
-            <h2 className="platinum"> Platinum Sponsors </h2>
-            <img src='/assets/images/google.png' alt='Platinum Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '200px' }} />
-            <h2 className="gold"> Gold Sponsors </h2>
+        <div 
+        className={`Sponsors ${isSponsorsVisible ? 'visible' : ''}`}
+        ref={sponsorsRef}
+      >
+        <h1> Our Sponsors </h1>
+        <h2 className="platinum glow-platinum"> Platinum Sponsors </h2>
+        <div className="sponsor-item">
+          <img src='/assets/images/google.png' alt='Platinum Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '200px' }} />
+        </div>
+        
+        <h2 className="gold glow-gold"> Gold Sponsors </h2>
+        <div className="sponsor-grid">
+          <div className="sponsor-item">
             <img src='/assets/images/g.png' alt='Gold Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
+          </div>
+          <div className="sponsor-item">
             <img src='/assets/images/g.png' alt='Gold Sponsor 2' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
+          </div>
+          <div className="sponsor-item">
             <img src='/assets/images/g.png' alt='Gold Sponsor 3' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
-            <h2 className="silver"> Silver Sponsors </h2>
-            <img src='/assets/images/g.png' alt='Silver Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '100px' }} />
-            <img src='/assets/images/g.png' alt='Silver Sponsor 2' className='img-fluid mb-3' style={{ maxWidth: '100px' }} />
-            <img src='/assets/images/g.png' alt='Silver Sponsor 3' className='img-fluid mb-3' style={{ maxWidth: '100px' }} />
-            <img src='/assets/images/g.png' alt='Silver Sponsor 4' className='img-fluid mb-3' style={{ maxWidth: '100px' }} />
-            <img src='/assets/images/g.png' alt='Silver Sponsor 5' className='img-fluid mb-3' style={{ maxWidth: '100px' }} />
+          </div>
         </div>
 
-        <div className='Contact'>
-            <h1> Contact Us </h1>
-            <p> Email: asthramcc@gmail.com </p>
-            <p> Phone: 99999999999 </p>
+        <h2 className="silver glow-silver"> Silver Sponsors </h2>
+        <div className="sponsor-grid">
+          {[1, 2, 3, 4, 5].map((index) => (
+            <div key={index} className="sponsor-item">
+              <img 
+                src='/assets/images/g.png' 
+                alt={`Silver Sponsor ${index}`} 
+                className='img-fluid mb-3' 
+                style={{ maxWidth: '100px' }} 
+              />
+            </div>
+          ))}
         </div>
+      </div>
+
+      <div 
+        className={`Contact ${isContactVisible ? 'visible' : ''}`}
+        ref={contactRef}
+      >
+        <h1>Get In Touch</h1>
+        <div className="contact-grid">
+          <div className="contact-item">
+            <Mail size={32} className="contact-icon" />
+            <h3>Email Us</h3>
+            <a href="mailto:asthramcc@gmail.com">asthramcc@gmail.com</a>
+          </div>
+          
+          <div className="contact-item">
+            <Phone size={32} className="contact-icon" />
+            <h3>Call Us</h3>
+            <a href="tel:+919999999999">+91 99999 99999</a>
+          </div>
+          
+          <div className="contact-item">
+            <Instagram size={32} className="contact-icon" />
+            <h3>Follow Us</h3>
+            <a href="https://instagram.com/asthra_mcc" target="_blank" rel="noopener noreferrer">
+              @asthra_mcc
+            </a>
+          </div>
+          
+          <div className="contact-item">
+            <MapPin size={32} className="contact-icon" />
+            <h3>Visit Us</h3>
+            <p>Musaliar College of Engineering<br />Chirayinkeezhu, Trivandrum<br />Kerala, India</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

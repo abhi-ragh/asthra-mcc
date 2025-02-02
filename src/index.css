@@ -154,7 +154,7 @@ body {
   align-items: center;
   padding: 80px 10%;
   background: linear-gradient(to bottom, #fffdf0, #ffffff);
-  transition-delay: 0.9s; /* Slight delay for better effect */
+  transition-delay: 0.2s; /* Slight delay for better effect */
 }
 
 .About h1 {
@@ -225,14 +225,16 @@ body {
 
 /* Sponsors Section */
 .Sponsors {
+  font-family: 'Square', sans-serif;
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
+  background: #ffae00;
   text-align: center;
 }
 
 .Sponsors h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
+  font-family: 'Square', sans-serif;
+  font-size: 4rem;
+  color: #e7e7e7;
   margin-bottom: 40px;
 }
 
@@ -241,18 +243,6 @@ body {
   margin-top: 40px;
 }
 
-/* Sponsor Headings */
-.Sponsors h2.platinum {
-  color: #e5e4e2; /* Platinum color */
-}
-
-.Sponsors h2.gold {
-  color: #ffd700; /* Gold color */
-}
-
-.Sponsors h2.silver {
-  color: #c0c0c0; /* Silver color */
-}
 
 .Sponsors img {
   margin: 20px;
@@ -449,4 +439,154 @@ section {
 /* Ensure containers don't clip during animation */
 .nina, .matadoria {
   overflow: visible;
+}
+
+/* Sponsor Section Animations */
+.Sponsors {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Sponsors.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.sponsor-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Sponsors.visible .sponsor-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add delay to each sponsor item */
+.Sponsors.visible .sponsor-item:nth-child(1) { transition-delay: 0.1s; }
+.Sponsors.visible .sponsor-item:nth-child(2) { transition-delay: 0.2s; }
+.Sponsors.visible .sponsor-item:nth-child(3) { transition-delay: 0.3s; }
+.Sponsors.visible .sponsor-item:nth-child(4) { transition-delay: 0.4s; }
+.Sponsors.visible .sponsor-item:nth-child(5) { transition-delay: 0.5s; }
+
+/* Glowing Heading Effects */
+@keyframes glow-platinum {
+  0%, 100% { text-shadow: 0 0 10px rgba(229, 228, 226, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(229, 228, 226, 0.8), 0 0 30px rgba(229, 228, 226, 0.5); }
+}
+
+@keyframes glow-gold {
+  0%, 100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.5); }
+}
+
+@keyframes glow-silver {
+  0%, 100% { text-shadow: 0 0 10px rgba(192, 192, 192, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(192, 192, 192, 0.8), 0 0 30px rgba(192, 192, 192, 0.5); }
+}
+
+.glow-platinum {
+  animation: glow-platinum 2s infinite;
+}
+
+.glow-gold {
+  animation: glow-gold 2s infinite;
+}
+
+.glow-silver {
+  animation: glow-silver 2s infinite;
+}
+
+/* Contact Section Styles */
+.Contact {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  padding: 5rem 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Contact h1 {
+  font-family: 'Square', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(45deg, #ff6b35, #ffae00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.Contact.visible .contact-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add delay to each contact item */
+.Contact.visible .contact-item:nth-child(1) { transition-delay: 0.1s; }
+.Contact.visible .contact-item:nth-child(2) { transition-delay: 0.2s; }
+.Contact.visible .contact-item:nth-child(3) { transition-delay: 0.3s; }
+.Contact.visible .contact-item:nth-child(4) { transition-delay: 0.4s; }
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+  color: #ff6b35;
+  margin-bottom: 1rem;
+}
+
+.contact-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item a {
+  color: #ff6b35;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #ffae00;
+}
+
+.contact-item p {
+  color: #cccccc;
+  line-height: 1.6;
 }
