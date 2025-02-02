@@ -13,12 +13,28 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/events">Events</Link>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#about">About Us</a>
+              <Link className="nav-link" to="/about">About Us</Link>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
+              <Link 
+                className="nav-link" 
+                to="/"
+                onClick={() => {
+                  setTimeout(() => {
+                    const contactSection = document.getElementById('contact');
+                    if (contactSection) {
+                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
+                }}
+              >
+                Contact
+              </Link>
             </li>
+
           </ul>
         </div>
       </div>
