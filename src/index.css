@@ -143,7 +143,6 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Adjust existing About styles */
 .About {
   position: relative;
@@ -589,4 +588,364 @@ section {
 .contact-item p {
   color: #cccccc;
   line-height: 1.6;
+}
+
+/* index.css */
+/* Sponsors Section */
+.Sponsors {
+  font-family: 'Square', sans-serif;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  text-align: center;
+  position: relative;
+}
+
+/* Title Sponsor - Grandest Section */
+.title-section {
+  padding: 60px 0;
+  margin: 40px 0;
+  background: linear-gradient(45deg, 
+    rgba(255, 107, 53, 0.05) 0%, 
+    rgba(255, 107, 53, 0.02) 100%);
+  border-radius: 30px;
+  border: 3px solid rgba(255, 107, 53, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.title-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,
+    transparent 40%,
+    rgba(255, 107, 53, 0.05) 50%,
+    transparent 60%);
+  animation: title-glow 6s infinite linear;
+}
+
+@keyframes title-glow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.title-sponsor {
+  position: relative;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(255, 107, 53, 0.2);
+}
+
+.title-sponsor:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 107, 53, 0.2);
+}
+
+.title-sponsor img {
+  max-width: 400px;
+  filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.3));
+}
+
+/* Platinum Sponsors - Simplified */
+.platinum-section {
+  padding: 40px 0;
+  margin: 30px 0;
+}
+
+.platinum-sponsor {
+  padding: 30px;
+  background: rgba(229, 228, 226, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(229, 228, 226, 0.1);
+}
+
+.platinum-sponsor:hover {
+  background: rgba(229, 228, 226, 0.08);
+}
+
+.platinum-sponsor img {
+  max-width: 300px;
+  filter: brightness(1.1);
+}
+
+/* Gold Sponsors */
+.gold-section {
+  padding: 30px 0;
+  margin: 20px 0;
+}
+
+.gold-sponsor {
+  padding: 20px;
+  background: rgba(255, 215, 0, 0.03);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.gold-sponsor:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.gold-sponsor img {
+  max-width: 200px;
+}
+
+/* Silver Sponsors */
+.silver-section {
+  padding: 20px 0;
+}
+
+.silver-sponsor {
+  padding: 15px;
+  background: rgba(192, 192, 192, 0.02);
+  border-radius: 8px;
+}
+
+.silver-sponsor img {
+  max-width: 120px;
+}
+
+/* Grid Adjustments */
+.sponsor-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  place-items: center;
+}
+
+.title-section .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.platinum-section .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.gold-section .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.silver-section .sponsor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* Header Effects */
+.glow-title {
+  font-size: 5rem !important;
+  color: #ff6b35 !important;
+  text-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
+  animation: title-pulse 2s infinite;
+}
+
+@keyframes title-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Mobile-friendly updates for index.css */
+
+/* Base responsive adjustments */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Logo and header adjustments */
+.logo-container {
+  width: 90%;
+  max-width: 550px;
+}
+
+.fest-logo {
+  width: 100%;
+  max-width: 350px;
+}
+
+.dates {
+  font-size: 2rem;
+  margin-top: 85vh;
+}
+
+@media (max-width: 768px) {
+  .dates {
+    font-size: 1.5rem;
+    margin-top: 80vh;
+  }
+}
+
+/* Cloud adjustments for mobile */
+@media (max-width: 768px) {
+  .cloud {
+    width: 80%;
+  }
+  
+  .cloud-left-top {
+    right: 70%;
+  }
+  
+  .cloud-right-top {
+    left: 70%;
+  }
+  
+  .cloud-left-mid,
+  .cloud-right-mid {
+    display: none; /* Hide middle clouds on mobile */
+  }
+}
+
+/* About section mobile adjustments */
+@media (max-width: 768px) {
+  .About {
+    padding: 60px 5%;
+  }
+  
+  .About h1 {
+    font-size: 3rem;
+  }
+  
+  .About p {
+    font-size: 1rem;
+  }
+  
+  .about-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .dragon {
+    width: 200px;
+    margin: 20px 0;
+  }
+}
+
+/* Performances section mobile adjustments */
+@media (max-width: 768px) {
+  .Performances p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .nina, .matadoria {
+    flex-direction: column;
+  }
+  
+  .nina-img, .matadoria-img,
+  .feb24, .feb25 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Sponsors section mobile adjustments */
+@media (max-width: 768px) {
+  .Sponsors {
+    padding: 60px 5%;
+  }
+  
+  .glow-title {
+    font-size: 3rem !important;
+  }
+  
+  .sponsor-grid {
+    gap: 1rem;
+  }
+  
+  .title-sponsor img {
+    max-width: 280px;
+  }
+  
+  .platinum-sponsor img {
+    max-width: 200px;
+  }
+  
+  .gold-sponsor img {
+    max-width: 150px;
+  }
+  
+  .silver-sponsor img {
+    max-width: 100px;
+  }
+}
+
+/* Contact section mobile adjustments */
+@media (max-width: 768px) {
+  .Contact {
+    padding: 3rem 1rem;
+  }
+  
+  .Contact h1 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-item {
+    padding: 1.5rem;
+  }
+}
+
+/* Event details mobile adjustments */
+@media (max-width: 768px) {
+  .event-details-container {
+    padding: 100px 1rem 40px;
+  }
+  
+  .event-details-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-title {
+    font-size: 2rem;
+  }
+  
+  .event-fees-prizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration-fee,
+  .prize-pool,
+  .prize-distribution {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Events page mobile adjustments */
+@media (max-width: 768px) {
+  .events {
+    padding-top: 60px;
+  }
+  
+  .events h1 {
+    font-size: 2rem;
+  }
+  
+  .events h2 {
+    font-size: 1.5rem;
+  }
+  
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .event-card {
+    margin-bottom: 1rem;
+  }
 }

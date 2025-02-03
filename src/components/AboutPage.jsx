@@ -8,13 +8,13 @@ const AboutPage = () => {
       <h1>About Us</h1>
       <div className="about-content">
         <p>
-          Asthra, the crown jewel of Musaliar College of Engineering, is back with a vengeance! After a 3-year hiatus forced by unprecedented global challenges, we're reigniting the spark of innovation and culture with our grand rebirth. This isn't just a comeback - it's a revolution in technical excellence and creative expression.
+          Asthra, the crown jewel of Musaliar College of Engineering, is back with a vengeance! After a 3-year hiatus forced by unprecedented challenges, we're reigniting the spark of innovation and culture with our grand rebirth. This isn't just a comeback - it's a revolution in technical excellence and creative expression.
         </p>
         <p>
-          Born from the ashes of pandemic restrictions, Asthra 2024 emerges stronger than ever. Our techno-cultural extravaganza returns to push boundaries, break conventions, and create legends. This year's edition combines cutting-edge technology competitions with breathtaking cultural performances, creating a melting pot of ideas and talents.
+          Born from the ashes, Asthra 2025 emerges stronger than ever. Our techno-cultural extravaganza returns to push boundaries, break conventions, and create legends. This year's edition combines cutting-edge technology competitions with breathtaking cultural performances, creating a melting pot of ideas and talents.
         </p>
         <p>
-          We're not just resurrecting traditions - we're rewriting the rulebook. With new events, bigger challenges, and unprecedented opportunities, Asthra 2024 is where the future gets built. Join us as we celebrate resilience, innovation, and the indomitable spirit of student community.
+          We're not just resurrecting traditions - we're rewriting the rulebook. With new events, bigger challenges, and unprecedented opportunities, Asthra 2025 is where the future gets built. Join us as we celebrate resilience, innovation, and the indomitable spirit of student community.
         </p>
       </div>
       

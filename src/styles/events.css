@@ -377,3 +377,86 @@
     border-color: #ff6b35;
     transform: translateX(-5px);
   }
+
+  .event-fees-prizes {
+    text-align: center;
+    font-family: 'Square', sans-serif;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .registration-fee {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 370px;
+  }
+  
+  .registration-fee h3,
+  .prize-pool h3,
+  .prize-distribution h3 {
+    color: #ff6b35;
+    margin-bottom: 0.5rem;
+    font-family: 'Square', sans-serif;
+    text-align: center;
+  }
+  
+  .registration-fee p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .prize-pool {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    margin-left: 20px;
+  }
+  
+  .prize-pool .prize-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffae00;
+  }
+  
+  .prize-distribution {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+    margin-left: 20px;
+  }
+  
+  .prize-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .prize-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+  }
+  
+  .prize-position {
+    font-size: 1.25rem;
+    min-width: 40px;
+  }
+  
+  .prize-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffae00;
+  }

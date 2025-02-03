@@ -105,43 +105,50 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             </div>
         </div>
 
-        <div 
-        className={`Sponsors ${isSponsorsVisible ? 'visible' : ''}`}
-        ref={sponsorsRef}
-      >
-        <h1> Our Sponsors </h1>
-        <h2 className="platinum glow-platinum"> Platinum Sponsors </h2>
-        <div className="sponsor-item">
-          <img src='/assets/images/google.png' alt='Platinum Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '200px' }} />
-        </div>
-        
-        <h2 className="gold glow-gold"> Gold Sponsors </h2>
-        <div className="sponsor-grid">
-          <div className="sponsor-item">
-            <img src='/assets/images/g.png' alt='Gold Sponsor 1' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
-          </div>
-          <div className="sponsor-item">
-            <img src='/assets/images/g.png' alt='Gold Sponsor 2' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
-          </div>
-          <div className="sponsor-item">
-            <img src='/assets/images/g.png' alt='Gold Sponsor 3' className='img-fluid mb-3' style={{ maxWidth: '150px' }} />
-          </div>
-        </div>
-
-        <h2 className="silver glow-silver"> Silver Sponsors </h2>
-        <div className="sponsor-grid">
-          {[1, 2, 3, 4, 5].map((index) => (
-            <div key={index} className="sponsor-item">
-              <img 
-                src='/assets/images/g.png' 
-                alt={`Silver Sponsor ${index}`} 
-                className='img-fluid mb-3' 
-                style={{ maxWidth: '100px' }} 
-              />
+        <div className={`Sponsors ${isSponsorsVisible ? 'visible' : ''}`} ref={sponsorsRef}>
+          {/* Title Sponsor */}
+          <div className="title-section">
+            <h2 className="glow-title">Title Sponsor</h2>
+            <div className="sponsor-grid">
+              <div className="sponsor-item title-sponsor">
+                <img src='/assets/images/googe.png' alt='Coming Soon' />
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* Platinum Sponsors */}
+          <div className="platinum-section">
+            <h2 className="platinum">Platinum Sponsors</h2>
+            <div className="sponsor-grid">
+              <div className="sponsor-item platinum-sponsor">
+                <img src='/assets/images/googl.png' alt='Coming Soon' />
+              </div>
+            </div>
+          </div>
+
+          {/* Gold Sponsors */}
+          <div className="gold-section">
+            <h2 className="gold">Gold Sponsors</h2>
+            <div className="sponsor-grid">
+              <div className="sponsor-item gold-sponsor">
+                <img src='/assets/images/gold-sponsor.png' alt='Coming Soon' />
+              </div>
+              {/* Add more gold sponsors */}
+            </div>
+          </div>
+
+          {/* Silver Sponsors */}
+          <div className="silver-section">
+            <h2 className="silver">Silver Sponsors</h2>
+            <div className="sponsor-grid">
+              {[1, 2, 3, 4, 5].map((index) => (
+                <div key={index} className="sponsor-item silver-sponsor">
+                  <img src='/assets/images/silver-sponsor.png' alt='Coming Soon'/>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
 
       <div 
         id="contact"
