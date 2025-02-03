@@ -2,6 +2,11 @@
 .events {
     padding-top: 80px;
     background-color: #fffdf0;
+    background: url("/public/assets/images/bg-event.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .events-day3{
@@ -66,6 +71,18 @@
     flex-direction: row;
     width: 100vw;
     background-color: #ffae00;
+  }
+  
+  .matadoria-container{
+    background: url("/public/assets/videos/matadoria.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .dj-container {
+    background: url("/public/assets/videos/nina.gif");
   }
   
   .nina-img, .matadoria-img, .feb24, .feb25 {
@@ -281,6 +298,11 @@
 .about-page-container {
     padding: 120px 10% 60px;
     min-height: 100vh;
+    background: url("/public/assets/images/bg-white.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #fffdf0;
     color: #333;
   }

@@ -50,18 +50,6 @@ const Home = () => {
   }, []);
   return (
     <div>
-        <div 
-          className="clouds-container"
-          style={{ '--scroll-progress': scrollProgress }}
-        >
-            <img src="/assets/images/Cloud 2.png" alt="Cloud 1" className="cloud cloud-left-top" />
-            <img src="/assets/images/Cloud 1.png" alt="Cloud 2" className="cloud cloud-left-mid" />
-            <img src="/assets/images/Cloud 2.png" alt="Cloud 3" className="cloud cloud-left-bottom" />
-            <img src="/assets/images/Cloud 2-flip.png" alt="Cloud 4" className="cloud cloud-right-top" />
-            <img src="/assets/images/Cloud 1-flip.png" alt="Cloud 5" className="cloud cloud-right-mid" />
-            <img src="/assets/images/Cloud 2-flip.png" alt="Cloud 6" className="cloud cloud-right-bottom" />
-        </div>
-
         <div className="home-container">
             <div className={`logo-container ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
                 <img
@@ -71,7 +59,7 @@ const Home = () => {
                 />
             </div>
             <div className={`dates ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
-                  <p> FEB 22 24 25</p>
+                  <p className='date-gradient'> FEB 22 24 25</p>
             </div>
         </div>
 

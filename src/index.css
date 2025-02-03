@@ -11,6 +11,11 @@ body {
   padding: 0;
   font-family: "Poppins", serif;
   background-color: #fffdf0;
+  background: url("/public/assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -52,73 +57,9 @@ body {
   opacity: 0;
 }
 
-/* Cloud Positioning */
-.cloud-left-top {
-  position: absolute;
-  bottom: 60%;
-  right: 60%;
-  width: 60%;
-  animation: float 6s infinite ease-in-out;
-}
-
-.cloud-left-mid {
-  position: absolute;
-  bottom: 0px;
-  right: 75%;
-  width: 60%;
-  z-index: 5;
-  animation: float 8s infinite ease-in-out;
-}
-
-.cloud-left-bottom {
-  position: absolute;
-  top: 60%;
-  right: 55%;
-  width: 60%;
-  rotate: 90deg;
-  animation: float 7s infinite ease-in-out;
-}
-
-.cloud-right-top {
-  position: absolute;
-  bottom: 60%;
-  left: 60%;
-  width: 60%;
-  animation: float 7s infinite ease-in-out;
-}
-
-.cloud-right-mid {
-  position: absolute;
-  bottom: 0px;
-  left: 80%;
-  width: 60%;
-  z-index: 5;
-  animation: float 9s infinite ease-in-out;
-}
-
-.cloud-right-bottom {
-  position: absolute;
-  top: 60%;
-  left: 55%;
-  width: 60%;
-  rotate: 265deg;
-  animation: float 6s infinite ease-in-out;
-}
-
-/* Floating Animation */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
 .dates{
   font-size: 2.5rem;
   font-family: 'Square', sans-serif;
-  color: #ff6b35;
   line-height: 80%;
   text-align: center;
   margin-top: 90vh;
@@ -128,6 +69,12 @@ body {
 
 .dates.hidden {
   opacity: 0;
+}
+
+.date-gradient{
+  background: linear-gradient(to right, #553886, #9270d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* About Section Transition */
@@ -152,8 +99,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 80px 10%;
-  background: linear-gradient(to bottom, #fffdf0, #ffffff);
+  background: url("/public/assets/images/bg-white.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   transition-delay: 0.2s; /* Slight delay for better effect */
+
 }
 
 .About h1 {
@@ -176,7 +128,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #fffdf0, #ffffff); /* Gradient transition */
+  background: url("/public/assets/images/bg-white.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .Performances p {
@@ -199,6 +155,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  background-color: #ffffff;
 }
 
 .feb25{
@@ -317,66 +274,6 @@ section {
 
 .nav-item:hover .nav-link {
   color: white !important;
-}
-
-/* Update clouds container to be fixed */
-.clouds-container {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 100;
-}
-
-/* Update cloud base styles */
-.cloud {
-  position: absolute;
-  width: 60%;
-  transition: all 0.8s ease-out;
-  opacity: calc(1 - (var(--scroll-progress) * 1));
-  transform-origin: center center;
-}
-
-/* Left clouds movement */
-.cloud-left-top {
-  bottom: calc(60% - (var(--scroll-progress) * 30%));
-  right: calc(60% - (var(--scroll-progress) * 30%));
-  animation: float 6s infinite ease-in-out;
-}
-
-.cloud-left-mid {
-  bottom: 0;
-  right: calc(75% - (var(--scroll-progress) * 37.5%));
-  animation: float 8s infinite ease-in-out;
-}
-
-.cloud-left-bottom {
-  top: calc(60% - (var(--scroll-progress) * 27.5%));
-  right: calc(55% - (var(--scroll-progress) * 27.5%));
-  rotate: 90deg;
-  animation: float 7s infinite ease-in-out;
-}
-
-/* Right clouds movement */
-.cloud-right-top {
-  bottom: calc(60% - (var(--scroll-progress) * 30%));
-  left: calc(60% - (var(--scroll-progress) * 30%));
-  animation: float 7s infinite ease-in-out;
-}
-
-.cloud-right-mid {
-  bottom: 0;
-  left: calc(80% - (var(--scroll-progress) * 40%));
-  animation: float 9s infinite ease-in-out;
-}
-
-.cloud-right-bottom {
-  top: calc(60% - (var(--scroll-progress) * 27.5%));
-  left: calc(55% - (var(--scroll-progress) * 27.5%));
-  rotate: 265deg;
-  animation: float 6s infinite ease-in-out;
 }
 
 .dragon{
@@ -746,206 +643,4 @@ section {
 @keyframes title-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.8; }
-}
-
-/* Mobile-friendly updates for index.css */
-
-/* Base responsive adjustments */
-html {
-  font-size: 16px;
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-/* Logo and header adjustments */
-.logo-container {
-  width: 90%;
-  max-width: 550px;
-}
-
-.fest-logo {
-  width: 100%;
-  max-width: 350px;
-}
-
-.dates {
-  font-size: 2rem;
-  margin-top: 85vh;
-}
-
-@media (max-width: 768px) {
-  .dates {
-    font-size: 1.5rem;
-    margin-top: 80vh;
-  }
-}
-
-/* Cloud adjustments for mobile */
-@media (max-width: 768px) {
-  .cloud {
-    width: 80%;
-  }
-  
-  .cloud-left-top {
-    right: 70%;
-  }
-  
-  .cloud-right-top {
-    left: 70%;
-  }
-  
-  .cloud-left-mid,
-  .cloud-right-mid {
-    display: none; /* Hide middle clouds on mobile */
-  }
-}
-
-/* About section mobile adjustments */
-@media (max-width: 768px) {
-  .About {
-    padding: 60px 5%;
-  }
-  
-  .About h1 {
-    font-size: 3rem;
-  }
-  
-  .About p {
-    font-size: 1rem;
-  }
-  
-  .about-heading {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .dragon {
-    width: 200px;
-    margin: 20px 0;
-  }
-}
-
-/* Performances section mobile adjustments */
-@media (max-width: 768px) {
-  .Performances p {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  
-  .nina, .matadoria {
-    flex-direction: column;
-  }
-  
-  .nina-img, .matadoria-img,
-  .feb24, .feb25 {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-
-/* Sponsors section mobile adjustments */
-@media (max-width: 768px) {
-  .Sponsors {
-    padding: 60px 5%;
-  }
-  
-  .glow-title {
-    font-size: 3rem !important;
-  }
-  
-  .sponsor-grid {
-    gap: 1rem;
-  }
-  
-  .title-sponsor img {
-    max-width: 280px;
-  }
-  
-  .platinum-sponsor img {
-    max-width: 200px;
-  }
-  
-  .gold-sponsor img {
-    max-width: 150px;
-  }
-  
-  .silver-sponsor img {
-    max-width: 100px;
-  }
-}
-
-/* Contact section mobile adjustments */
-@media (max-width: 768px) {
-  .Contact {
-    padding: 3rem 1rem;
-  }
-  
-  .Contact h1 {
-    font-size: 2.5rem;
-  }
-  
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-item {
-    padding: 1.5rem;
-  }
-}
-
-/* Event details mobile adjustments */
-@media (max-width: 768px) {
-  .event-details-container {
-    padding: 100px 1rem 40px;
-  }
-  
-  .event-details-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .event-title {
-    font-size: 2rem;
-  }
-  
-  .event-fees-prizes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .registration-fee,
-  .prize-pool,
-  .prize-distribution {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-
-/* Events page mobile adjustments */
-@media (max-width: 768px) {
-  .events {
-    padding-top: 60px;
-  }
-  
-  .events h1 {
-    font-size: 2rem;
-  }
-  
-  .events h2 {
-    font-size: 1.5rem;
-  }
-  
-  .events-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .event-card {
-    margin-bottom: 1rem;
-  }
 }

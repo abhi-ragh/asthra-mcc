@@ -63,7 +63,7 @@ const Events = () => {
             className="nina-img" 
           />
           <img 
-            src="/assets/logos/feb24.png" 
+            src="/assets/logos/feb24-b.png" 
             alt="Performances" 
             className="feb24" 
           />
