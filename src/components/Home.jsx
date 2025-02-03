@@ -102,7 +102,8 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <h2 className="glow-title">Title Sponsor</h2>
             <div className="sponsor-grid">
               <div className="sponsor-item title-sponsor">
-                <img src='/assets/images/googe.png' alt='Coming Soon' />
+                { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
+                <h6> Coming Soon</h6>
               </div>
             </div>
           </div>
@@ -112,7 +113,8 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <h2 className="platinum">Platinum Sponsors</h2>
             <div className="sponsor-grid">
               <div className="sponsor-item platinum-sponsor">
-                <img src='/assets/images/googl.png' alt='Coming Soon' />
+              { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
+                <h6> Coming Soon</h6>
               </div>
             </div>
           </div>
@@ -122,7 +124,8 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <h2 className="gold">Gold Sponsors</h2>
             <div className="sponsor-grid">
               <div className="sponsor-item gold-sponsor">
-                <img src='/assets/images/gold-sponsor.png' alt='Coming Soon' />
+              { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
+                <h6> Coming Soon</h6>
               </div>
               {/* Add more gold sponsors */}
             </div>
@@ -134,7 +137,8 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <div className="sponsor-grid">
               {[1, 2, 3, 4, 5].map((index) => (
                 <div key={index} className="sponsor-item silver-sponsor">
-                  <img src='/assets/images/silver-sponsor.png' alt='Coming Soon'/>
+                  { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
+                  <h6> Coming Soon</h6>
                 </div>
               ))}
             </div>

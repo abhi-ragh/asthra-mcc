@@ -748,6 +748,33 @@ section {
   visibility: hidden;
 }
 
+@media (max-width: 1600px) {
+  .About h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .dragon {
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  .Performances p {
+    font-size: 4rem !important;
+    text-align: center;
+  }
+
+  .fest-logo {
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .contact-grid{
+    height: 550px;
+    max-width: 806px;
+  }
+}
+
 /* Mobile Responsiveness Adjustments */
 @media (max-width: 768px) {
   /* Home Container and Logo */
