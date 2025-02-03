@@ -15,7 +15,10 @@ const Events = () => {
 
   return (
     <div className="events">
-      <div className="events-day1">
+      <h1 className='soon'> COMING SOON ...</h1>
+      <>
+    {/* 
+    <div className="events-day1">
         <h1>Day 1 - Tech Fest</h1>
         
         <div className="department-section">
@@ -88,9 +91,9 @@ const Events = () => {
             className="matadoria-img" 
           />
         </div>
-      </div>
+      </div>     */}
+        </>
     </div>
-  );
-};
+)};
 
 export default Events;
