@@ -73,18 +73,6 @@
     background-color: #ffae00;
   }
   
-  .matadoria-container{
-    background: url("/public/assets/videos/matadoria.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .dj-container {
-    background: url("/public/assets/videos/nina.gif");
-  }
-  
   .nina-img, .matadoria-img, .feb24, .feb25 {
     width: 40%;
     margin-left: auto;

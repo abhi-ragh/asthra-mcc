@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
 
 const Home = () => {
+
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isAboutVisible, setIsAboutVisible] = useState(false);
   const [isNinaVisible, setIsNinaVisible] = useState(false);
@@ -44,6 +45,8 @@ const Home = () => {
         setIsContactVisible(rect.top < window.innerHeight * 0.8);
       }
     };
+
+    
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -154,7 +157,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           <div className="contact-item">
             <Phone size={32} className="contact-icon" />
             <h3>Call Us</h3>
-            <a href="tel:+919999999999">+91 99999 99999</a>
+            <a href="tel:+919074355010">+91 90743 55010</a>
           </div>
           
           <div className="contact-item">
