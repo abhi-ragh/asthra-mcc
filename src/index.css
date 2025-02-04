@@ -849,7 +849,7 @@ section {
 
   /* Performances Section */
   .Performances p {
-    font-size: 2.5rem !important;
+    font-size: 1.5rem !important;
     text-align: center;
   }
 
@@ -936,7 +936,7 @@ section {
   }
 
   .Performances p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .dragon {
