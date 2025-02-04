@@ -9,13 +9,24 @@ const Home = () => {
   const [isSponsorsVisible, setIsSponsorsVisible] = useState(false);
   const [isContactVisible, setIsContactVisible] = useState(false);
   const [isIntroFinished, setIsIntroFinished] = useState(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [showLogoAndDate, setShowLogoAndDate] = useState(false);
   
+  const introVideoRef = useRef(null);
+  const bgVideoRef = useRef(null);
   const aboutRef = useRef();
   const ninaRef = useRef();
   const matadoriaRef = useRef();
   const sponsorsRef = useRef();
   const contactRef = useRef();
+
+  useEffect(() => {
+    // Simple timer to show logo and date after 3 seconds
+    const timer = setTimeout(() => {
+      setShowLogoAndDate(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,32 +62,39 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleIntroEnd = () => {
-    setIsIntroFinished(true);
-  };
-
-  const handleVideoLoaded = () => {
-    setIsVideoLoaded(true);
-  };
-
+  useEffect(() => {
+    if (introVideoRef.current) {
+      introVideoRef.current.addEventListener('timeupdate', () => {
+        if (introVideoRef.current && bgVideoRef.current) {
+          const timeLeft = introVideoRef.current.duration - introVideoRef.current.currentTime;
+          if (timeLeft <= 0.1 && !isIntroFinished) {
+            bgVideoRef.current.play();
+            setIsIntroFinished(true);
+          }
+        }
+      });
+    }
+  }, []);
 
   return (
     <div>
       <div className="home-container">
         <div className="video-wrapper">
           <video 
-            className={`video intro-video ${isIntroFinished ? 'fade-out' : ''}`}
+            ref={introVideoRef}
+            className="video"
+            style={{ visibility: isIntroFinished ? 'hidden' : 'visible' }}
             autoPlay 
             playsInline 
             muted
-            onEnded={handleIntroEnd}
-            onLoadedData={handleVideoLoaded}
           >
             <source src="/assets/videos/intro.mp4" type="video/mp4" />
           </video>
           
           <video 
-            className={`video bg-video ${isIntroFinished ? 'fade-in' : ''}`}
+            ref={bgVideoRef}
+            className="video"
+            style={{ visibility: isIntroFinished ? 'visible' : 'hidden' }}
             autoPlay 
             loop 
             muted 
@@ -86,14 +104,14 @@ const Home = () => {
           </video>
         </div>
 
-        <div className={`logo-container ${!isVideoLoaded ? 'hidden' : ''} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
+        <div className={`logo-container ${showLogoAndDate ? 'fade-in' : 'invisible'} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
           <img
             src="/assets/logos/logo.png"
             alt="Fest Logo"
             className="fest-logo"
           />
         </div>
-        <div className={`dates ${!isVideoLoaded ? 'hidden' : ''} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
+        <div className={`dates ${showLogoAndDate ? 'fade-in' : 'invisible'} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
           <p className='date-gradient'> FEB 22 24 25</p>
         </div>
       </div>
