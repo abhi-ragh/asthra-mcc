@@ -791,7 +791,7 @@ section {
 }
 
 /* Mobile Responsiveness Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* Home Container and Logo */
   .home-container {
     height: 100vh;
