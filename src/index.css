@@ -791,7 +791,7 @@ section {
 }
 
 /* Mobile Responsiveness Adjustments */
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   /* Home Container and Logo */
   .home-container {
     height: 100vh;
@@ -849,7 +849,7 @@ section {
 
   /* Performances Section */
   .Performances p {
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
   }
 
@@ -923,6 +923,12 @@ section {
     text-align: center !important;
   }
 
+}
+
+@media (max-width: 480px) {
+  .Performances p {
+    font-size: 1rem;
+  }
 }
 
 /* Very Small Screens */
