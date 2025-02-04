@@ -174,8 +174,10 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           
           <div className="contact-item">
             <MapPin size={32} className="contact-icon" />
+            <a href="https://maps.app.goo.gl/Y43Z5kSahvHZqmpj6" target="_blank" rel="noopener noreferrer">
             <h3>Visit Us</h3>
             <p>Musaliar College of Engineering<br />Chirayinkeezhu, Trivandrum<br />Kerala, India</p>
+            </a>
           </div>
         </div>
       </div>
