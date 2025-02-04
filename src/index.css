@@ -1096,7 +1096,7 @@ section {
 }
 
 /* Mobile styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .video-wrapper {
     /* This ensures the rotated video covers the full width */
     width: 100vh;
