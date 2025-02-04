@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
 
 const Home = () => {
-
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isAboutVisible, setIsAboutVisible] = useState(false);
   const [isNinaVisible, setIsNinaVisible] = useState(false);
   const [isMatadoriaVisible, setIsMatadoriaVisible] = useState(false);
   const [isSponsorsVisible, setIsSponsorsVisible] = useState(false);
   const [isContactVisible, setIsContactVisible] = useState(false);
+  const [isIntroFinished, setIsIntroFinished] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   
   const aboutRef = useRef();
   const ninaRef = useRef();
@@ -46,25 +47,56 @@ const Home = () => {
       }
     };
 
-    
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleIntroEnd = () => {
+    setIsIntroFinished(true);
+  };
+
+  const handleVideoLoaded = () => {
+    setIsVideoLoaded(true);
+  };
+
+
   return (
     <div>
-        <div className="home-container">
-            <div className={`logo-container ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
-                <img
-                src="/assets/logos/logo.png"
-                alt="Fest Logo"
-                className="fest-logo"
-                />
-            </div>
-            <div className={`dates ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
-                  <p className='date-gradient'> FEB 22 24 25</p>
-            </div>
+      <div className="home-container">
+        <div className="video-wrapper">
+          <video 
+            className={`video intro-video ${isIntroFinished ? 'fade-out' : ''}`}
+            autoPlay 
+            playsInline 
+            muted
+            onEnded={handleIntroEnd}
+            onLoadedData={handleVideoLoaded}
+          >
+            <source src="/assets/videos/intro.mp4" type="video/mp4" />
+          </video>
+          
+          <video 
+            className={`video bg-video ${isIntroFinished ? 'fade-in' : ''}`}
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+          >
+            <source src="/assets/videos/bg.mp4" type="video/mp4" />
+          </video>
         </div>
+
+        <div className={`logo-container ${!isVideoLoaded ? 'hidden' : ''} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
+          <img
+            src="/assets/logos/logo.png"
+            alt="Fest Logo"
+            className="fest-logo"
+          />
+        </div>
+        <div className={`dates ${!isVideoLoaded ? 'hidden' : ''} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
+          <p className='date-gradient'> FEB 22 24 25</p>
+        </div>
+      </div>
 
         <div 
           className={`About ${isAboutVisible ? 'visible' : ''}`} 
