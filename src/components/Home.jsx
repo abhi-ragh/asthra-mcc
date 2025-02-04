@@ -167,7 +167,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           <div className="contact-item">
             <Instagram size={32} className="contact-icon" />
             <h3>Follow Us</h3>
-            <a href="https://instagram.com/asthra_mcc" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/asthra.mcc" target="_blank" rel="noopener noreferrer">
               @asthra_mcc
             </a>
           </div>
