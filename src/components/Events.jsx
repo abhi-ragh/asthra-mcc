@@ -1,99 +1,54 @@
 // src/components/Events.jsx
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { techEvents, interCollegeEvents } from '../data/eventData';
+import Select from 'react-select';
+import { events } from '../data/eventData';
 
 const Events = () => {
-  const renderEvents = (events) => {
-    return events.map((event) => (
-      <Link to={`/events/${event.id}`} key={event.id} className="event-card">
-        <img src={event.poster} alt={event.name} className="event-poster" />
-        <h3 className="event-name">{event.name}</h3>
-      </Link>
-    ));
-  };
+  const [selectedTags, setSelectedTags] = useState([]);
+
+  // Extract unique tags from all events
+  const tagOptions = useMemo(() => {
+    const uniqueTags = new Set();
+    events.forEach(event => {
+      event.tags?.forEach(tag => uniqueTags.add(tag));
+    });
+    return Array.from(uniqueTags).map(tag => ({
+      value: tag,
+      label: tag
+    }));
+  }, []);
+
+  // Filter events based on selected tags
+  const filteredEvents = useMemo(() => {
+    if (selectedTags.length === 0) return events;
+    return events.filter(event => 
+      selectedTags.every(tag => event.tags?.includes(tag.value))
+    );
+  }, [selectedTags]);
 
   return (
     <div className="events">
-      <h1 className='soon'> COMING SOON ...</h1>
-      <>
-    {/* 
-    <div className="events-day1">
-        <h1>Day 1 - Tech Fest</h1>
-        
-        <div className="department-section">
-          <h2>CSE</h2>
-          <div className="events-grid">
-            {renderEvents(techEvents.cse)}
-          </div>
-        </div>
-
-        <div className="department-section">
-          <h2>CE</h2>
-          <div className="events-grid">
-            {renderEvents(techEvents.ce)}
-          </div>
-        </div>
-
-        <div className="department-section">
-          <h2>BME</h2>
-          <div className="events-grid">
-            {renderEvents(techEvents.bme)}
-          </div>
-        </div>
-
-        <div className="department-section">
-          <h2>FT</h2>
-          <div className="events-grid">
-            {renderEvents(techEvents.ft)}
-          </div>
-        </div>
-
-        <div className="department-section">
-          <h2>EC</h2>
-          <div className="events-grid">
-            {renderEvents(techEvents.ec)}
-          </div>
-        </div>
+      <div className="filter-container">
+        <Select
+          isMulti
+          options={tagOptions}
+          value={selectedTags}
+          onChange={setSelectedTags}
+          placeholder="Filter by tags..."
+          className="tag-select"
+        />
       </div>
 
-      <div className='events-day2'>
-        <h1>Day 2 - DJ EVE</h1>
-        <div className="dj-container">
-          <img 
-            src="/assets/logos/nina.png" 
-            alt="Performances" 
-            className="nina-img" 
-          />
-          <img 
-            src="/assets/logos/feb24-b.png" 
-            alt="Performances" 
-            className="feb24" 
-          />
-        </div>
+      <div className="events-grid">
+        {filteredEvents.map((event) => (
+          <Link to={`/events/${event.id}`} key={event.id} className="event-card">
+            <img src={event.poster} alt={event.name} className="event-poster" />
+          </Link>
+        ))}
       </div>
-
-      <div className='events-day3'>
-        <h1>Day 3 - Inter College Events </h1>
-        <div className="events-grid">
-          {renderEvents(interCollegeEvents)}
-        </div>
-    
-        <div className="matadoria-container">
-          <img 
-            src="/assets/logos/feb25.png" 
-            alt="Performances" 
-            className="feb25" 
-          />
-          <img 
-            src="/assets/logos/matadoria.png" 
-            alt="Performances" 
-            className="matadoria-img" 
-          />
-        </div>
-      </div>     */}
-        </>
     </div>
-)};
+  );
+};
 
 export default Events;
