@@ -590,3 +590,62 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Update the event-fees-prizes section */
+.event-fees-prizes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Remove fixed widths and add responsive sizing */
+.registration-fee,
+.prize-pool,
+.prize-distribution {
+  width: 100%;
+  max-width: 300px;
+  min-width: 250px;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .event-fees-prizes {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration-fee,
+  .prize-pool,
+  .prize-distribution {
+    width: 90%;
+    max-width: none;
+    min-width: auto;
+  }
+}
+
+/* Ensure text alignment consistency */
+.registration-fee h3,
+.prize-pool h3,
+.prize-distribution h3,
+.registration-fee p,
+.prize-pool p {
+  text-align: center;
+}
+
+/* Prize distribution list alignment */
+.prize-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prize-item {
+  width: 100%;
+  max-width: 200px;
+  justify-content: space-between;
+}
