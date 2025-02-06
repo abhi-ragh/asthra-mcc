@@ -365,6 +365,6 @@ export const events = [
                   'participants should bring ID card and report before 1 hour',
                   ],
                 },
-                registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+                registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYSf42mteWpdxC8QWm1VqNx2eOQVkYIjy9_GEF_kVjF4EgsA/viewform'
                 }
 ];
