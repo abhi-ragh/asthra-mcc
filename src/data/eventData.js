@@ -136,7 +136,7 @@ export const events = [
   id: 'mehndi-competition',
   name: 'Mehndi Competition',
   poster: '/assets/Events/mehndi.png',
-  tags: ['General','Day 2 | Feb 24','Day 2 | Off-stage'],
+  tags: ['General','Day 2 | Feb 24','Off-stage'],
   registrationFee: {
     amount: 150,
     perTeam: true
@@ -168,7 +168,7 @@ export const events = [
     id: 'treasure-hunt',
     name: 'Treasure Hunt',
     poster: '/assets/Events/treasure.png',
-    tags: ['General','Day 2 | Feb 24','Day 2 | Off-stage'],
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
     registrationFee: {
       amount: 100,
       perTeam: false
@@ -203,7 +203,7 @@ export const events = [
       id: 'embroidery-competition',
       name: 'Embroidery Competition',
       poster: '/assets/Events/embroidery.png',
-      tags: ['General','Day 3 | Feb 25','Day 3 | Off-stage'],
+      tags: ['General','Day 3 | Feb 25','Off-stage'],
       registrationFee: {
         amount: 150,
         perTeam: false
@@ -229,7 +229,7 @@ export const events = [
         id: 'broll-competition',
         name: 'B-Roll Competition',
         poster: '/assets/Events/broll.png',
-        tags: ['General','Day 3 | Feb 25','Day 3 | Off-stage'],
+        tags: ['General','Day 3 | Feb 25','Off-stage'],
         registrationFee: {
           amount: 150,
           perTeam: false
@@ -240,7 +240,7 @@ export const events = [
         },
         content: {
           'Description': 'Calling all Visual Storytellers! 🎬 The lens is your weapon, the story your canvas! Musaliar College proudly presents the ultimate B-roll challenge for Asthra! Unleash your cinematic vision and weave compelling narratives with the art of B-roll. From breathtaking landscapes to intimate moments, capture the essence of storytelling without a single word. Are you ready to paint a thousand pictures?',
-          'Rules And Regukation': [
+          'Rules And Regulation': [
             'The footage must be original and recorded by the participant.',
             'The video length should be  minimum 30 seconds and maximum 1 minute',
             'Any software can be used for color grading and minor enhancements, but AI-generated or heavily manipulated content may not be allowed.',
@@ -250,5 +250,65 @@ export const events = [
           ]
         },
         registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScRk5WDjHycuacgc2_grZAkJNcBKXjF3jWrlXeBpKAuhyKtHA/viewform?usp=dialog'
-        }
+        },
+          {
+            id: 'decode-the-beats',
+            name: 'Decode The Beats',
+            poster: '/assets/Events/decode.png',
+            tags: ['General','Day 3 | Feb 25','Off-stage'],
+            registrationFee: {
+              amount: 100,
+              perTeam: false
+            },
+            prizes: {
+              type: 'pool',
+              amount: 1500
+            },
+            content: {
+              'Description': 'Do you speak the language of music? 🎼 Asthra at Musaliar College challenges you to Decode the Beats! Test your musical knowledge, identify the hidden tracks, and prove your mastery of melody. Ready to unlock the music?',
+              'Rules And Regulation': [
+                "Participants of 2 per team.",
+                "The competition will consist of 3 rounds.",
+                "Use of external devices is strictly prohibited during the competition, except when specifically permitted by organizers for a designated purpose.",
+                "The team with the highest score at the end of all rounds will be declared the winner.",
+                "Judges' decisions are final and binding.",
+                "Participants are requested to carry their ID card of their respective colleges for registration.",
+                "The music used in the competition will span various genres."
+              ],
+              'Code Of Conduct': 'Participants are expected to maintain a respect-ful and sportsmanlike attitude throughout the competition. Any form of cheating or disruptive behavior will result in disqualification.'
+            },
+            registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+            },
+            {
+              id: 'spot-photography',
+              name: 'Spot Photography',
+              poster: '/assets/Events/spot.png',
+              tags: ['General','Day 3 | Feb 25','Off-stage'],
+              registrationFee: {
+                amount: 150,
+                perTeam: false
+              },
+              prizes: {
+                type: 'pool',
+                amount: 1500
+              },
+              content: {
+                'Description': 'Can you see the unseen? 👀 Musaliar College\'s Asthra fest challenges you with Tasveer, a spot photography competition that celebrates the power of visual storytelling. Prepare to find the extraordinary in the everyday, capture the emotions, and freeze the fleeting moments. Ready to capture the magic?',
+                'Rules And Regulation': [
+                  "The contest will be conducted at the college.",
+                  "Specific theme will be provided for the contest.",
+                  "There will be a time limit (3 hours). Participants should submit their photos in the specified time.",
+                  "You are required to provide a unique title and description for each image submitted.",
+                  "Participants who submit their photos after the specified time will be disqualified.",
+                  "Images must be in JPEG format.",
+                  "All submitted photos must contain the original EXIF metadata information.",
+                  "There must be no border(s), logo(s), copyright marks, identifying marks, or any other visible references and/or marks on the image.",
+                  "Photos that include inappropriate and/or offensive content, including violence, human rights and/or environmental violations, contrary to the law, religious, cultural and moral traditions and practices of India, are strictly prohibited and will be immediately discarded.",
+                  "The decision taken by the coordinators/judges of this event in regard to judgement or any other issue shall be final.",
+                  "Certificates will be provided for the participants.",
+                  "Participants should bring their ID card and report 1 hour before the event."
+                ],
+              },
+              registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+              }
 ];

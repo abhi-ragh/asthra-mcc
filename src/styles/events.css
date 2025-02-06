@@ -2,7 +2,7 @@
 .events {
     padding-top: 80px;
     background-color: #fffdf0;
-    background: url("/public/assets/images/bg-event.jpg");
+    background: url("/public/assets/images/bg-white.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -104,8 +104,12 @@
   /* src/styles/eventDetails.css */
 .event-details-container {
     padding: 120px 5% 60px;
-    min-height: 100vh;
     background-color: #fffdf0;
+    background: url("/public/assets/images/bg-event.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .back-btn {
@@ -155,6 +159,10 @@
   
   .event-info-section {
     color: #333;
+  }
+
+  .event-info-section h1 {
+    text-align: center;
   }
   
   .event-title {
@@ -277,6 +285,13 @@
     .event-rules h2 {
       font-size: 1.5rem;
     }
+
+    .registration-fee {
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 250px;
+  }
   }
 
   /* About Page Styles */
@@ -394,14 +409,14 @@
     margin: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .registration-fee {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 370px;
+    width: 270px;
   }
   
   .registration-fee h3,
@@ -424,8 +439,7 @@
     padding: 1rem;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    width: 250px;
-    margin-left: 20px;
+    width: 270px;
   }
   
   .prize-pool .prize-amount {
