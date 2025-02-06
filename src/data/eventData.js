@@ -251,6 +251,34 @@ export const events = [
         },
         registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScRk5WDjHycuacgc2_grZAkJNcBKXjF3jWrlXeBpKAuhyKtHA/viewform?usp=dialog'
         },
+        {
+          id: 'ipl-auction',
+          name: 'IPL AUCTION',
+          poster: '/assets/Events/ipl.png',
+          tags: ['General','Day 3 | Feb 25','Off-stage'],
+          registrationFee: {
+            amount: 100,
+            perTeam: false
+          },
+          prizes: {
+            type: 'pool',
+            amount: 1500
+          },
+          content: {
+            'Description': 'Got a knack for strategy? 🤔 Asthra, Musaliar College\'s spectacular fest, challenges you to Lagaan, the IPL Auction showdown!  Will you be the shrewdest bidder, the master negotiator, or the one who misses out on the star player?  Prepare for a bidding war like no other!  Are you ready to play the game?',
+            'Rules And Regulation': [
+              'Team Consist Of Two Members.',
+              'Competition will be of Two Rounds.', 
+              'First Round will be General IPL Quiz.', 
+              'Second Round Will be a Mock Ipl Auction.',
+              'The Team with maximum points will be Considered as Winners.',
+              'Decision Of Judges will Be Final.',
+              'The Auction result will be completely based on Player Stats.', 
+              'Violation Of Rules During Auction will result in disqualification.'
+            ]
+          },
+          registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScs-nv4IyZ2hQUjYtOgQ48vSns3O12UENLPMmGZQebPtp-01w/viewform?usp=header'
+          },
           {
             id: 'decode-the-beats',
             name: 'Decode The Beats',
@@ -310,5 +338,33 @@ export const events = [
                 ],
               },
               registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
-              }
+              },
+              {
+                id: 'mini-photography',
+                name: 'Miniature Photography',
+                poster: '/assets/Events/mini.png',
+                tags: ['General','Day 3 | Feb 25','Off-stage'],
+                registrationFee: {
+                  amount: 150,
+                  perTeam: false
+                },
+                prizes: {
+                  type: 'pool',
+                  amount: 1500
+                },
+                content: {
+                  'Description': 'Get your Macro Lenses Ready! 🐜 Musaliar College\'s Asthra fest invites you to Zoompix! Explore the miniature world, capture stunning close-ups, and showcase your photography skills.  Ready to zoom in on the details? ',
+                  'Rules And Regulation': [
+                  'The contest will be conducted at the college',
+                  'There will be time limit(3 hour). participants should submit their photos in specified time.',
+                  'Participants who are submitting their photos after the specified time will be disqualified.',
+                  'Images must be in JPEG format.',
+                  'Use neutral or context-appropriate backgrounds to avoid clutter.',
+                  'Use a macro lens or close-up mode for sharp details.',
+                  'Avoid Over-Editing.Excessive manipulation may reduce authenticity.',
+                  'participants should bring ID card and report before 1 hour',
+                  ],
+                },
+                registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+                }
 ];
