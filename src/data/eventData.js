@@ -337,7 +337,7 @@ export const events = [
                   "Participants should bring their ID card and report 1 hour before the event."
                 ],
               },
-              registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+              registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSftX8V9LYAoB3QceAO4oFYW6209_q12PkGVioYsIluE_5vnIw/viewform'
               },
               {
                 id: 'mini-photography',
