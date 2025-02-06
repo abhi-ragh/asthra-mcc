@@ -103,7 +103,7 @@ const Home = () => {
             <source src="/assets/videos/bg.mp4" type="video/mp4" />
           </video>
         </div>
-
+        
         <div className={`logo-container ${showLogoAndDate ? 'fade-in' : 'invisible'} ${scrollProgress > 0.3 ? 'hidden' : ''}`}>
           <img
             src="/assets/logos/logo.png"
