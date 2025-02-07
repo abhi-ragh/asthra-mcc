@@ -199,172 +199,203 @@ export const events = [
     },
     registrationLink: 'https://forms.gle/3sYxpyuh84hAatXk7'
     },
-    {
-      id: 'embroidery-competition',
-      name: 'Embroidery Competition',
-      poster: '/assets/Events/embroidery.png',
-      tags: ['General','Day 3 | Feb 25','Off-stage'],
-      registrationFee: {
-        amount: 150,
-        perTeam: false
-      },
-      prizes: {
-        type: 'pool',
-        amount: 1500
-      },
-      content: {
-        'Description': 'Ready to get your fingers nimble…with thread? 😉 Musaliar College\'s Zardozi competition is your chance to shine! From delicate details to bold statements, let your embroidery do the talking. Think you\'ve got the magic touch?',
-        'Rules And Regulations': [
-          'Participants must bring their own embroidery materials',
-          'All stitches must be done manually using a needle and thread. Machine embroidery is not allowed',
-          'Pre-drawn or pre-stitched designs are not allowed',
-          'The time limit is 2 hours',
-          'The decision of the judges is final and binding.',
-          'Participants are requested to carry their ID card of their respected colleges for registration'
-        ]
-      },
-      registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSda7yWwVoQNV8W9a81p6tOlRIUEMjCGOObUlz-oPwwUK7mtYg/viewform?usp=header'
-      },
-      {
-        id: 'broll-competition',
-        name: 'B-Roll Competition',
-        poster: '/assets/Events/broll.png',
-        tags: ['General','Day 3 | Feb 25','Off-stage'],
-        registrationFee: {
-          amount: 150,
-          perTeam: false
-        },
-        prizes: {
-          type: 'pool',
-          amount: 1500
-        },
-        content: {
-          'Description': 'Calling all Visual Storytellers! 🎬 The lens is your weapon, the story your canvas! Musaliar College proudly presents the ultimate B-roll challenge for Asthra! Unleash your cinematic vision and weave compelling narratives with the art of B-roll. From breathtaking landscapes to intimate moments, capture the essence of storytelling without a single word. Are you ready to paint a thousand pictures?',
-          'Rules And Regulation': [
-            'The footage must be original and recorded by the participant.',
-            'The video length should be  minimum 30 seconds and maximum 1 minute',
-            'Any software can be used for color grading and minor enhancements, but AI-generated or heavily manipulated content may not be allowed.',
-            'No logos, watermarks, or promotional content should be included',
-            'Videos should be submitted in mp4 or hevc format ',            
-            'Participants are requested to carry their ID card of their respected colleges for registration'
-          ]
-        },
-        registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScRk5WDjHycuacgc2_grZAkJNcBKXjF3jWrlXeBpKAuhyKtHA/viewform?usp=dialog'
-        },
-        {
-          id: 'ipl-auction',
-          name: 'IPL AUCTION',
-          poster: '/assets/Events/ipl.png',
-          tags: ['General','Day 3 | Feb 25','Off-stage'],
-          registrationFee: {
-            amount: 100,
-            perTeam: false
-          },
-          prizes: {
-            type: 'pool',
-            amount: 1500
-          },
-          content: {
-            'Description': 'Got a knack for strategy? 🤔 Asthra, Musaliar College\'s spectacular fest, challenges you to Lagaan, the IPL Auction showdown!  Will you be the shrewdest bidder, the master negotiator, or the one who misses out on the star player?  Prepare for a bidding war like no other!  Are you ready to play the game?',
-            'Rules And Regulation': [
-              'Team Consist Of Two Members.',
-              'Competition will be of Two Rounds.', 
-              'First Round will be General IPL Quiz.', 
-              'Second Round Will be a Mock Ipl Auction.',
-              'The Team with maximum points will be Considered as Winners.',
-              'Decision Of Judges will Be Final.',
-              'The Auction result will be completely based on Player Stats.', 
-              'Violation Of Rules During Auction will result in disqualification.'
-            ]
-          },
-          registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScs-nv4IyZ2hQUjYtOgQ48vSns3O12UENLPMmGZQebPtp-01w/viewform?usp=header'
-          },
-          {
-            id: 'decode-the-beats',
-            name: 'Decode The Beats',
-            poster: '/assets/Events/decode.png',
-            tags: ['General','Day 3 | Feb 25','Off-stage'],
-            registrationFee: {
-              amount: 100,
-              perTeam: false
-            },
-            prizes: {
-              type: 'pool',
-              amount: 1500
-            },
-            content: {
-              'Description': 'Do you speak the language of music? 🎼 Asthra at Musaliar College challenges you to Decode the Beats! Test your musical knowledge, identify the hidden tracks, and prove your mastery of melody. Ready to unlock the music?',
-              'Rules And Regulation': [
-                "Participants of 2 per team.",
-                "The competition will consist of 3 rounds.",
-                "Use of external devices is strictly prohibited during the competition, except when specifically permitted by organizers for a designated purpose.",
-                "The team with the highest score at the end of all rounds will be declared the winner.",
-                "Judges' decisions are final and binding.",
-                "Participants are requested to carry their ID card of their respective colleges for registration.",
-                "The music used in the competition will span various genres."
-              ],
-              'Code Of Conduct': 'Participants are expected to maintain a respect-ful and sportsmanlike attitude throughout the competition. Any form of cheating or disruptive behavior will result in disqualification.'
-            },
-            registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
-            },
-            {
-              id: 'spot-photography',
-              name: 'Spot Photography',
-              poster: '/assets/Events/spot.png',
-              tags: ['General','Day 3 | Feb 25','Off-stage'],
-              registrationFee: {
-                amount: 150,
-                perTeam: false
-              },
-              prizes: {
-                type: 'pool',
-                amount: 1500
-              },
-              content: {
-                'Description': 'Can you see the unseen? 👀 Musaliar College\'s Asthra fest challenges you with Tasveer, a spot photography competition that celebrates the power of visual storytelling. Prepare to find the extraordinary in the everyday, capture the emotions, and freeze the fleeting moments. Ready to capture the magic?',
-                'Rules And Regulation': [
-                  "The contest will be conducted at the college.",
-                  "Specific theme will be provided for the contest.",
-                  "There will be a time limit (3 hours). Participants should submit their photos in the specified time.",
-                  "You are required to provide a unique title and description for each image submitted.",
-                  "Participants who submit their photos after the specified time will be disqualified.",
-                  "Images must be in JPEG format.",
-                  "All submitted photos must contain the original EXIF metadata information.",
-                  "There must be no border(s), logo(s), copyright marks, identifying marks, or any other visible references and/or marks on the image.",
-                  "Photos that include inappropriate and/or offensive content, including violence, human rights and/or environmental violations, contrary to the law, religious, cultural and moral traditions and practices of India, are strictly prohibited and will be immediately discarded.",
-                  "The decision taken by the coordinators/judges of this event in regard to judgement or any other issue shall be final.",
-                  "Certificates will be provided for the participants.",
-                  "Participants should bring their ID card and report 1 hour before the event."
-                ],
-              },
-              registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSftX8V9LYAoB3QceAO4oFYW6209_q12PkGVioYsIluE_5vnIw/viewform'
-              },
-              {
-                id: 'mini-photography',
-                name: 'Miniature Photography',
-                poster: '/assets/Events/mini.png',
-                tags: ['General','Day 3 | Feb 25','Off-stage'],
-                registrationFee: {
-                  amount: 150,
-                  perTeam: false
-                },
-                prizes: {
-                  type: 'pool',
-                  amount: 1500
-                },
-                content: {
-                  'Description': 'Get your Macro Lenses Ready! 🐜 Musaliar College\'s Asthra fest invites you to Zoompix! Explore the miniature world, capture stunning close-ups, and showcase your photography skills.  Ready to zoom in on the details? ',
-                  'Rules And Regulation': [
-                  'The contest will be conducted at the college',
-                  'There will be time limit(3 hour). participants should submit their photos in specified time.',
-                  'Participants who are submitting their photos after the specified time will be disqualified.',
-                  'Images must be in JPEG format.',
-                  'Use neutral or context-appropriate backgrounds to avoid clutter.',
-                  'Use a macro lens or close-up mode for sharp details.',
-                  'Avoid Over-Editing.Excessive manipulation may reduce authenticity.',
-                  'participants should bring ID card and report before 1 hour',
-                  ],
-                },
-                registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYSf42mteWpdxC8QWm1VqNx2eOQVkYIjy9_GEF_kVjF4EgsA/viewform'
-                }
+  {
+    id: 'embroidery-competition',
+    name: 'Embroidery Competition',
+    poster: '/assets/Events/embroidery.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Ready to get your fingers nimble…with thread? 😉 Musaliar College\'s Zardozi competition is your chance to shine! From delicate details to bold statements, let your embroidery do the talking. Think you\'ve got the magic touch?',
+      'Rules And Regulations': [
+        'Participants must bring their own embroidery materials',
+        'All stitches must be done manually using a needle and thread. Machine embroidery is not allowed',
+        'Pre-drawn or pre-stitched designs are not allowed',
+        'The time limit is 2 hours',
+        'The decision of the judges is final and binding.',
+        'Participants are requested to carry their ID card of their respected colleges for registration'
+      ]
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSda7yWwVoQNV8W9a81p6tOlRIUEMjCGOObUlz-oPwwUK7mtYg/viewform?usp=header'
+    },
+  {
+    id: 'broll-competition',
+    name: 'B-Roll Competition',
+    poster: '/assets/Events/broll.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Calling all Visual Storytellers! 🎬 The lens is your weapon, the story your canvas! Musaliar College proudly presents the ultimate B-roll challenge for Asthra! Unleash your cinematic vision and weave compelling narratives with the art of B-roll. From breathtaking landscapes to intimate moments, capture the essence of storytelling without a single word. Are you ready to paint a thousand pictures?',
+      'Rules And Regulation': [
+        'The footage must be original and recorded by the participant.',
+        'The video length should be  minimum 30 seconds and maximum 1 minute',
+        'Any software can be used for color grading and minor enhancements, but AI-generated or heavily manipulated content may not be allowed.',
+        'No logos, watermarks, or promotional content should be included',
+        'Videos should be submitted in mp4 or hevc format ',            
+        'Participants are requested to carry their ID card of their respected colleges for registration'
+      ]
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScRk5WDjHycuacgc2_grZAkJNcBKXjF3jWrlXeBpKAuhyKtHA/viewform?usp=dialog'
+  },
+  {
+    id: 'ipl-auction',
+    name: 'IPL AUCTION',
+    poster: '/assets/Events/ipl.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 100,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Got a knack for strategy? 🤔 Asthra, Musaliar College\'s spectacular fest, challenges you to Lagaan, the IPL Auction showdown!  Will you be the shrewdest bidder, the master negotiator, or the one who misses out on the star player?  Prepare for a bidding war like no other!  Are you ready to play the game?',
+      'Rules And Regulation': [
+        'Team Consist Of Two Members.',
+        'Competition will be of Two Rounds.', 
+        'First Round will be General IPL Quiz.', 
+        'Second Round Will be a Mock Ipl Auction.',
+        'The Team with maximum points will be Considered as Winners.',
+        'Decision Of Judges will Be Final.',
+        'The Auction result will be completely based on Player Stats.', 
+        'Violation Of Rules During Auction will result in disqualification.'
+      ]
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScs-nv4IyZ2hQUjYtOgQ48vSns3O12UENLPMmGZQebPtp-01w/viewform?usp=header'
+    },
+  {
+    id: 'decode-the-beats',
+    name: 'Decode The Beats',
+    poster: '/assets/Events/decode.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 100,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Do you speak the language of music? 🎼 Asthra at Musaliar College challenges you to Decode the Beats! Test your musical knowledge, identify the hidden tracks, and prove your mastery of melody. Ready to unlock the music?',
+      'Rules And Regulation': [
+        "Participants of 2 per team.",
+        "The competition will consist of 3 rounds.",
+        "Use of external devices is strictly prohibited during the competition, except when specifically permitted by organizers for a designated purpose.",
+        "The team with the highest score at the end of all rounds will be declared the winner.",
+        "Judges' decisions are final and binding.",
+        "Participants are requested to carry their ID card of their respective colleges for registration.",
+        "The music used in the competition will span various genres."
+      ],
+      'Code Of Conduct': 'Participants are expected to maintain a respect-ful and sportsmanlike attitude throughout the competition. Any form of cheating or disruptive behavior will result in disqualification.'
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeD9oZ3RP835rObAQ60TghpvipU2YVXsWipKjWyGLRFqa65xA/viewform?usp=header'
+    },
+  {
+    id: 'spot-photography',
+    name: 'Spot Photography',
+    poster: '/assets/Events/spot.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Can you see the unseen? 👀 Musaliar College\'s Asthra fest challenges you with Tasveer, a spot photography competition that celebrates the power of visual storytelling. Prepare to find the extraordinary in the everyday, capture the emotions, and freeze the fleeting moments. Ready to capture the magic?',
+      'Rules And Regulation': [
+        "The contest will be conducted at the college.",
+        "Specific theme will be provided for the contest.",
+        "There will be a time limit (3 hours). Participants should submit their photos in the specified time.",
+        "You are required to provide a unique title and description for each image submitted.",
+        "Participants who submit their photos after the specified time will be disqualified.",
+        "Images must be in JPEG format.",
+        "All submitted photos must contain the original EXIF metadata information.",
+        "There must be no border(s), logo(s), copyright marks, identifying marks, or any other visible references and/or marks on the image.",
+        "Photos that include inappropriate and/or offensive content, including violence, human rights and/or environmental violations, contrary to the law, religious, cultural and moral traditions and practices of India, are strictly prohibited and will be immediately discarded.",
+        "The decision taken by the coordinators/judges of this event in regard to judgement or any other issue shall be final.",
+        "Certificates will be provided for the participants.",
+        "Participants should bring their ID card and report 1 hour before the event."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSftX8V9LYAoB3QceAO4oFYW6209_q12PkGVioYsIluE_5vnIw/viewform'
+    },
+  {
+    id: 'mini-photography',
+    name: 'Miniature Photography',
+    poster: '/assets/Events/mini.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Get your Macro Lenses Ready! 🐜 Musaliar College\'s Asthra fest invites you to Zoompix! Explore the miniature world, capture stunning close-ups, and showcase your photography skills.  Ready to zoom in on the details? ',
+      'Rules And Regulation': [
+      'The contest will be conducted at the college',
+      'There will be time limit(3 hour). participants should submit their photos in specified time.',
+      'Participants who are submitting their photos after the specified time will be disqualified.',
+      'Images must be in JPEG format.',
+      'Use neutral or context-appropriate backgrounds to avoid clutter.',
+      'Use a macro lens or close-up mode for sharp details.',
+      'Avoid Over-Editing.Excessive manipulation may reduce authenticity.',
+      'participants should bring ID card and report before 1 hour',
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfYSf42mteWpdxC8QWm1VqNx2eOQVkYIjy9_GEF_kVjF4EgsA/viewform'
+    },
+  {
+    id: 'pencil_drawing',
+    name: 'Pencil Drawing',
+    poster: '/assets/Events/pencil.png',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Where imagination meets paper! ✍ Musaliar College\'s Asthra fest challenges you to unleash your inner Picasso! The Picasso Pencil Drawing Competition is your chance to demonstrate your artistic prowess.  Prepare to transform blank pages into stunning works of art, using graphite as your medium and creativity as your guide. Ready to leave your impression?',
+      'Rules And Regulation': [
+        'Theme will be given on the spot',
+        'Only graphite and charcoal pencils are allowed.',
+        'Paper will be provided.',
+        'Competition duration will be of 1.5 hour.',
+        'The time in which participants complete the work will be recorded.',
+        'The drawing will be judged based upon the relevance to theme.',
+        'Decision of the judges shall be final.',
+        'Any violations of rules leads to disqualification.',
+        'Candidates must bring their college ID card.',
+        'Certificates will be provided to all the participants.',                 
+        'Participants should report their presence atleast 1 hour before event starts'
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf8xMbuClDKJGJ56e3nr-OI1s7ArNDSXno8qXUqQEvePUOJcA/viewform?usp=dialog'
+    }
 ];
