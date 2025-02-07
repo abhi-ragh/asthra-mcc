@@ -397,5 +397,64 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf8xMbuClDKJGJ56e3nr-OI1s7ArNDSXno8qXUqQEvePUOJcA/viewform?usp=dialog'
+    },
+  {
+    id: 'face_painting',
+    name: 'Face Painting',
+    poster: '/assets/Events/face.png',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Ready to get your hands…and faces…colorful? 😉 Musaliar College\'s Asthra fest\'s Chaaya competition is your chance to shine! From whimsical designs to bold statements, let your brushes do the talking. Think you\'ve got the magic touch?',
+      'Rules And Regulation': [
+        "Team event (two members one is person who will be painting and the other whose face will be painted).",
+        "Maximum allowed time is 2.5 hours.",
+        "Theme will be given on the spot.",
+        "Participants are requested to bring their own accessories.",
+        "May not use stamps, stencil or air brush system.",
+        "Certificates will be provided for all the participants.",
+        "Any participants reaching after the reporting time at the venue will not be considered for the competition.",
+        "Further instructions will be provided on the spot.",
+        "Candidates should bring their respective college ID cards.",
+        "Judges decision will be final."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScG_1CsUjN27Flf3wc6_HMDqo8ZME8aydfSzpSQIoJ235H4kw/viewform'
+    },
+  {
+    id: 'wall_art',
+    name: 'Wall Art',
+    poster: '/assets/Events/wall.png',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Calling all Mural Masters! 🎨 The walls are your canvas, the city your gallery! Musaliar College\'s Asthra fest proudly presents Artify, the ultimate wall art showdown! Prepare to transform blank spaces into breathtaking works of art, using vibrant colors and bold designs. Unleash your creativity, let your imagination run wild, and paint your masterpiece on a grand scale. Are you ready to leave your mark?',
+      'Rules And Regulation': [
+        "The artwork should align with the given theme.",
+        "No offensive, vulgar, political, or religiously sensitive content is allowed.",
+        "The artwork should not damage the wall’s structure or surroundings.",
+        "Use of pre-printed stickers or digital projections is prohibited.",
+        "Competition duration will be 3 hours.",
+        "Participants should report at least 1 hour before the event starts.",
+        "Candidates should bring their college ID card.",
+        "The decision of the judges is final.",
+        "Certificate will be provided to all the participants."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeVXK_5e5TWBsWlXtI-bap5DjmwMJaMuZvH4AsE6GhmiMFJDw/viewform'
     }
 ];
