@@ -456,5 +456,61 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeVXK_5e5TWBsWlXtI-bap5DjmwMJaMuZvH4AsE6GhmiMFJDw/viewform'
+    },
+  {
+    id: 'spell_bee',
+    name: 'Spell Bee',
+    poster: '/assets/Events/spell.jpg',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Do you have a way with words? 📖 Musaliar College\'s Asthra fest challenges you to the ultimate spelling test: the Spell Bee! Demonstrate your knowledge of the English language, your precision in spelling, and your calm under pressure. Ready to spellbound the judges?',
+      'Rules And Regulation': [
+        "The competition is conducted in multiple rounds.",
+        "Each participant is given one word per turn.",
+        "The difficulty level of words increases in each round.",
+        "Once a participant starts spelling, they cannot restart, change letters, or correct mistakes after saying a letter.",
+        "A fixed time (60 seconds) is given to spell each word.",
+        "Participants are requested to carry their ID card of their respective colleges for registration.",
+        "Certificate will be provided to all the participants.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScyj86rNMx4XOEp6dDfuunyUOGnE8oR5goFhtm0KMGgzjn12Q/viewform'
+    },
+  {
+    id: 'general_quiz',
+    name: 'General Quiz',
+    poster: '/assets/Events/quiz.jpg',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Think you know it all? 😉 Musaliar College\'s Asthra fest\'s General Quiz is your chance to prove it! From obscure facts to common knowledge, put your brainpower to the test. Ready to answer your way to the top?',
+      'Rules And Regulation': [
+        "Only team entries are eligible, and the team shall consist of 2 persons.",
+        "The decision of the quiz-master will be final and will not be subject to any change.",
+        "The participants shall not be allowed to use mobile or other electronic instruments.",
+        "The questions shall be in the form of multiple choice, True/False statements, specific answer questions, etc.",
+        "Audience/Supporters shall not give any hints or clues to the competitors.",
+        "Replacement of any participant of a team is not allowed after registration.",
+        "Participants should bring their College ID Card.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfDxa1aq37VrakgS7OyaQg8zeqGTVqjduinNJOVhQhQlMvkkA/viewform?usp=dialog'
     }
 ];
