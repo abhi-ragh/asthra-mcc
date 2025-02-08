@@ -512,5 +512,57 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfDxa1aq37VrakgS7OyaQg8zeqGTVqjduinNJOVhQhQlMvkkA/viewform?usp=dialog'
+    },
+  {
+    id: 'know_your_cinema',
+    name: 'Know Your Cinema',
+    poster: '/assets/Events/movie.png',
+    tags: ['General','Day 2 | Feb 24','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Calling all Movie Buffs! 🍿 Musaliar College\'s Asthra fest brings you the electrifying Cinephile competition! Think you know everything about movies? Put your knowledge to the test and compete against fellow film fanatics! From trivia titans to cinematic savants, only one can emerge victorious. Are you ready for the ultimate movie challenge? ',
+      'Rules And Regulation': [
+        "Participants must not use mobile phones, the internet, or any external help during the quiz.",
+        "Questions may include movie trivia, actors, directors, dialogues, awards, and film industry history.",
+        "Each round will have a specific time limit for answering questions.",
+        "Teams should consist of 2 members. Substitutions may not be allowed once the quiz starts.",
+        "Replacement of any participant of a team is not allowed after registration.",
+        "Participants should bring their College ID Card.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScnlafW3An60Bh7NX_JROMDp0rBfIngWbKJiqbcm9m5LViVMQ/viewform?usp=dialog'
+    },
+  {
+    id: 'origami',
+    name: 'Origami',
+    poster: '/assets/Events/origami.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Where paper comes to life! 🦋 Musaliar College\'s Asthra fest invites you to the enchanting world of Origami! The Origami Competition is your chance to bring your imagination to three-dimensional form. Prepare to transform flat sheets into captivating sculptures, using folds as your medium and creativity as your guide. Ready to unfold your potential?',
+      'Rules And Regulation': [
+        "Only paper is allowed—no glue, scissors, or other materials.",
+        "Time limit is 2 hours.",
+        "Decision of the judges will be final and any kind of arguments or appeal related to the judgement will not be entertained.",
+        "Participants are requested to carry their ID card of their respected colleges for registration.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd0QTAogVFHnxqdeJWXFt3JEC13iBcUdJrJzQGu5NBCW4mCNQ/viewform?usp=dialog'
     }
 ];
