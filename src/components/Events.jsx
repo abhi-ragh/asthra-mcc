@@ -1,34 +1,53 @@
-// src/components/Events.jsx
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { events } from '../data/eventData';
+import { technicalEvents } from './technicalEventData';
 
 const Events = () => {
   const [selectedTags, setSelectedTags] = useState([]);
+  const [eventType, setEventType] = useState('non-technical');
 
-  // Extract unique tags from all events
+  // Determine which events to show based on type
+  const currentEvents = eventType === 'technical' ? technicalEvents : events;
+
+  // Extract unique tags from current events
   const tagOptions = useMemo(() => {
     const uniqueTags = new Set();
-    events.forEach(event => {
+    currentEvents.forEach(event => {
       event.tags?.forEach(tag => uniqueTags.add(tag));
     });
     return Array.from(uniqueTags).map(tag => ({
       value: tag,
       label: tag
     }));
-  }, []);
+  }, [currentEvents]);
 
   // Filter events based on selected tags
   const filteredEvents = useMemo(() => {
-    if (selectedTags.length === 0) return events;
-    return events.filter(event => 
+    if (selectedTags.length === 0) return currentEvents;
+    return currentEvents.filter(event => 
       selectedTags.every(tag => event.tags?.includes(tag.value))
     );
-  }, [selectedTags]);
+  }, [selectedTags, currentEvents]);
 
   return (
     <div className="events">
+      <div className="event-type-buttons">
+        <button 
+          className={eventType === 'technical' ? 'active' : ''}
+          onClick={() => setEventType('technical')}
+        >
+          Technical
+        </button>
+        <button 
+          className={eventType === 'non-technical' ? 'active' : ''}
+          onClick={() => setEventType('non-technical')}
+        >
+          Non-Technical
+        </button>
+      </div>
+
       <div className="filter-container">
         <Select
           isMulti

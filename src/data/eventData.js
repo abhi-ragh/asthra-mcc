@@ -564,5 +564,35 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd0QTAogVFHnxqdeJWXFt3JEC13iBcUdJrJzQGu5NBCW4mCNQ/viewform?usp=dialog'
+    },
+  {
+    id: 'reel_competition',
+    name: 'Reel Competition',
+    poster: '/assets/Events/reel.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: 150,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Tell your story in seconds! 🎞 Musaliar College\'s Asthra fest challenges you to create magic with the Reel Deal competition! Showcase your filmmaking prowess, capture the essence of a narrative, and prove your mastery of the short-form video. Ready to reel in the accolades?',
+      'Rules And Regulation': [
+        "The reel must align with the given theme.",
+        "Content must be original and creative.",
+        "Avoid plagiarism, copyrighted music, or visuals without permission.",
+        "No offensive, obscene, or inappropriate content.",
+        "The format of the file should be Mp4 or MOV.",
+        "The duration of the reel should be 60 seconds.",
+        "Do not use AI-generated or heavily manipulated content.",
+        "Participants should bring their College ID Card.",
+        "Participants should report their presence at least 1 hour before the event starts.",
+        "Decision of the judges shall be final."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfTdjUQUd_mgrXhusOoad3RG21IvERsVh7xvfnQKCVi006u3A/viewform?usp=dialog'
     }
 ];
