@@ -1,7 +1,9 @@
-// src/components/EventDetails.jsx
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { events } from '../data/eventData';
+import { technicalEvents } from './technicalEventData';
+
+const allEvents = [...events, ...technicalEvents];
 
 const PrizeDisplay = ({ prizes }) => {
   if (!prizes) return null;
@@ -39,8 +41,8 @@ const EventDetails = () => {
   const { eventId } = useParams();
   const navigate = useNavigate();
 
-  // Simplified event finding since we now have a single array
-  const event = events.find(e => e.id === eventId);
+  // Now searches through all events
+  const event = allEvents.find(e => e.id === eventId);
 
   useEffect(() => {
     window.scrollTo(0, 0);
