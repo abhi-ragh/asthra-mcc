@@ -623,6 +623,7 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeZL49tRNejdY8ZZieJObuHcGKrL8VHOULJB9fT6lQmFGDZOQ/viewform?usp=dialog'
   },
+  /*
   {
     id: 'cadence',
     name: 'Cadence',
@@ -650,6 +651,7 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSctgrsP3z_kpp5L8nZrrAF1-SCtVtw2BrTuB5QkWhTSlUxMlw/viewform?usp=dialog'
   },
+  */
   {
     id: 'naach_naach',
     name: 'Naach Naach',
@@ -678,6 +680,7 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
+  /*
   {
     id: 'saregamapa',
     name: 'SAREGAMAPA',
@@ -705,4 +708,5 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
+  */
 ];
