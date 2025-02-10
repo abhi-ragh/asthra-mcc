@@ -87,7 +87,7 @@ video {
 
 .date-gradient{
   background: linear-gradient(to right, #553886, #9270d3);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -438,7 +438,7 @@ section {
   margin-bottom: 3rem;
   text-align: center;
   background: linear-gradient(45deg, #ff6b35, #ffae00);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1120,4 +1120,63 @@ section {
     height: 100%;
   }
 
+}
+
+/* Marquee Styles */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  font-family: 'Square', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  display: inline-block;
+  padding-left: 100%;
+}
+
+.highlight {
+  color: #ffae00;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 174, 0, 0.4);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .marquee-text {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-family: 'Square', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    padding-left: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-text {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-family: 'Square', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    padding-left: 100%;
+  }
+  
+  .marquee-container {
+    padding: 0.5rem 0;
+  }
 }

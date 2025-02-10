@@ -140,6 +140,16 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
               <img src="/assets/logos/nina.png" alt="Performances" className="nina-img fade-left" />
               <img src="/assets/logos/feb24.png" alt="Performances" className="feb24 fade-right" />
             </div> 
+            <div className="marquee-container">
+              <div className="marquee-text">
+                Students Registering For Intercollege Events Can Choose 
+                <span className="highlight"> One Free Ticket </span> 
+                For Either 
+                <span className="highlight"> DJ EVE </span> 
+                or 
+                <span className="highlight"> PRO SHOW</span>
+              </div>
+            </div>
             <div className={`matadoria ${isMatadoriaVisible ? 'visible' : ''}`} ref={matadoriaRef}>
               <img src="/assets/logos/feb25.png" alt="Performances" className="feb25 fade-left" />
               <img src="/assets/logos/matadoria.png" alt="Performances" className="matadoria-img fade-right" />

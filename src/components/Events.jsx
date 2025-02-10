@@ -44,7 +44,7 @@ const Events = () => {
           className={eventType === 'non-technical' ? 'active' : ''}
           onClick={() => setEventType('non-technical')}
         >
-          Non-Technical
+          Cultural
         </button>
       </div>
 

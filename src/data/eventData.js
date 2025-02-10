@@ -627,7 +627,7 @@ export const events = [
     id: 'cadence',
     name: 'Cadence',
     poster: '/assets/Events/cadence.png',
-    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    tags: ['General','Day 3 | Feb 25','On-stage'],
     registrationFee: {
       amount: '150',
       perTeam: false
@@ -654,7 +654,7 @@ export const events = [
     id: 'naach_naach',
     name: 'Naach Naach',
     poster: '/assets/Events/naach.png',
-    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    tags: ['General','Day 3 | Feb 25','On-stage'],
     registrationFee: {
       amount: '150',
       perTeam: false
@@ -682,7 +682,7 @@ export const events = [
     id: 'saregamapa',
     name: 'SAREGAMAPA',
     poster: '/assets/Events/saregama.png',
-    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    tags: ['General','Day 3 | Feb 25','On-stage'],
     registrationFee: {
       amount: '150',
       perTeam: false
