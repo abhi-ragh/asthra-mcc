@@ -594,5 +594,33 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfTdjUQUd_mgrXhusOoad3RG21IvERsVh7xvfnQKCVi006u3A/viewform?usp=dialog'
-    }
+    },
+  {
+    id: 'elocution',
+    name: 'Elocution',
+    poster: '/assets/Events/elocution.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: '50',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Where words have power! ✍ Musaliar College\'s Asthra fest challenges you to unleash your inner orator! The Talking Tom Elocution Competition is your chance to demonstrate your command of language and your ability to connect with an audience. Prepare to transform ideas into compelling narratives, using your voice as your instrument and passion as your guide. Ready to leave your mark?',
+      'Rules And Regulation': [
+        'The decision of the judges as regards the result of the competition will be the final and binding. ',
+        'Candidates will be given time slots to finish the elocution in that duration ',
+        'Each participate will be given a time limit not exceeding 10 minutes to speak on the given subject. ',
+        'A warning bell will be given after 8 minutes and a final bell after 10 minutes. If the participants exceed the allocated time than the marks will be deducted. ',
+        'The language for elocution will be Malayalam and English. ',
+        'Specific theme will be given for elocution ',
+        'Participants are requested to carry their ID card of their respected ',
+        'Participants should report their presence at least 1 hours before event starts'
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeZL49tRNejdY8ZZieJObuHcGKrL8VHOULJB9fT6lQmFGDZOQ/viewform?usp=dialog'
+    },
 ];
