@@ -1,3 +1,12 @@
+/* TODO: 
+- Optimize images and videos 
+- Clean up CSS
+- Add sponsor logos
+- Add sponsor links
+- Test if everything works
+*/
+
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
 
