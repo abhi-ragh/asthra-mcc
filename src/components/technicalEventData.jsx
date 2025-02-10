@@ -12,33 +12,31 @@ export const technicalEvents = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5ZJOTupjzsJqJBqiMzykWE8FGsI7oSBFBFNUjQLt7t5q0Ug/viewform?usp=dialog'
   },
   {
-    id: 'coding_competition',
-    name: 'Coding Competition',
-    poster: '/assets/Events/CSE/code.jpg',
-    tags: ['CSE','Evolve'],
+    id: 'squid_game',
+    name: 'Squid Game',
+    poster: '/assets/Events/ECE/squid.jpg',
+    tags: ['ECE','E-Hearts'],
     registrationFee: {
-      amount: 100,
+      amount: '50',
       perTeam: false
     },
     prizes: {
       type: 'pool',
-      amount: 2000
+      amount: 1500
     },
     content: {
-      'Description': 'Unleash your coding prowess at EVOLVE! 🚀Race against time, crack the challenges, and emerge as the ultimate code champion. 🏆Are you ready to evolve your skills? 💻✨',
+      'Description': 'The challenge awaits! Do you have what it takes to win? 💀🔥',
       'Rules And Regulation': [
-        'The coding competition will be 2 hours long.',
-        'Participants can bring their own Laptops otherwise systems will be provided.',
-        'Participants will be given a set of problems of varying difficulty levels (easy, medium, hard).',
-        'Participants must work individually. Collaboration or sharing of code is strictly prohibited.',
-        'Participants must not use any pre-written code or access external resources (e.g., GitHub, Stack Overflow) during the competition.',
-        'Any form of malpractice will result in immediate disqualification.',
-        'Certificates will be provided for the participants.',
-        'Participants should bring their ID card and report 1 hour before the event.'
+        "All players must register at the Google Forms provided below and DM us @_leictreonaic_ to receive the unique player number.",
+        "Each round eliminates players who fail the challenge. Eliminated players must leave the game arena.",
+        "Players must follow the instructions from the game masters or they will be disqualified.",
+        "Cheating results in immediate elimination.",
+        "Players who fail to complete a challenge within the time limit are eliminated.",
+        "Players must report at the basketball court at sharp 1 PM to complete the registration process."
       ],
     },
-    registrationLink: 'https://forms.gle/5rcLgrdPqR85QDjA9'
-    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHwhDCZq80BQA5taVjfTa5jFD1n2NdYI5uCuXkXHSJCRlLIg/viewform?usp=dialog'
+  },
   {
     id: 'website_designing',
     name: 'Website Designing',
@@ -75,7 +73,35 @@ export const technicalEvents = [
       ]
     },
     registrationLink: 'https://forms.gle/2ZsHWFerQviu9Eyp7'
+  },
+  {
+    id: 'coding_competition',
+    name: 'Coding Competition',
+    poster: '/assets/Events/CSE/code.jpg',
+    tags: ['CSE','Evolve'],
+    registrationFee: {
+      amount: 100,
+      perTeam: false
     },
+    prizes: {
+      type: 'pool',
+      amount: 2000
+    },
+    content: {
+      'Description': 'Unleash your coding prowess at EVOLVE! 🚀Race against time, crack the challenges, and emerge as the ultimate code champion. 🏆Are you ready to evolve your skills? 💻✨',
+      'Rules And Regulation': [
+        'The coding competition will be 2 hours long.',
+        'Participants can bring their own Laptops otherwise systems will be provided.',
+        'Participants will be given a set of problems of varying difficulty levels (easy, medium, hard).',
+        'Participants must work individually. Collaboration or sharing of code is strictly prohibited.',
+        'Participants must not use any pre-written code or access external resources (e.g., GitHub, Stack Overflow) during the competition.',
+        'Any form of malpractice will result in immediate disqualification.',
+        'Certificates will be provided for the participants.',
+        'Participants should bring their ID card and report 1 hour before the event.'
+      ],
+    },
+    registrationLink: 'https://forms.gle/5rcLgrdPqR85QDjA9'
+  },
   {
     id: 'debugging_competition',
     name: 'Debugging Competition',
@@ -198,29 +224,29 @@ export const technicalEvents = [
     registrationLink: 'https://forms.gle/dfuN2rfRnfmKudxY6'
     },
   {
-    id: 'squid_game',
-    name: 'Squid Game',
-    poster: '/assets/Events/ECE/squid.jpg',
-    tags: ['ECE','E-Hearts'],
+    id: 'mini_militia',
+    name: 'Mini Militia',
+    poster: '/assets/Events/CSE/mini.jpg',
+    tags: ['CSE','Evolve'],
     registrationFee: {
-      amount: '50',
+      amount: 100,
       perTeam: false
     },
     prizes: {
       type: 'pool',
-      amount: 1500
+      amount: 1000
     },
     content: {
-      'Description': 'The challenge awaits! Do you have what it takes to win? 💀🔥',
+      'Description': 'Gear up, lock \'n load, and dominate the battlefield! 💥Join the Mini Militia Tournament at EVOLVE and prove your combat skills.Will you be the last one standing? 🏆Ready, set, fight! 🔫✨',
       'Rules And Regulation': [
-        "All players must register at the Google Forms provided below and DM us @_leictreonaic_ to receive the unique player number.",
-        "Each round eliminates players who fail the challenge. Eliminated players must leave the game arena.",
-        "Players must follow the instructions from the game masters or they will be disqualified.",
-        "Cheating results in immediate elimination.",
-        "Players who fail to complete a challenge within the time limit are eliminated.",
-        "Players must report at the basketball court at sharp 1 PM to complete the registration process."
+        'Team Size: Each team consists of 2 players.',
+        'Fair Play: Teaming up with other teams outside of your squad is strictly prohibited.',
+        'Device : Players must bring their own smartphones.',
+        'Disconnection Rules: If a player disconnects, they may rejoin within the same match. If unable to reconnect, the match continues.',
+        'Cheating & Misconduct: Any use of hacks, third-party apps, or unfair advantages will result in immediate disqualification.',
+        'Decision Authority: The organizers\' decision is final in case of any disputes.'
       ],
     },
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHwhDCZq80BQA5taVjfTa5jFD1n2NdYI5uCuXkXHSJCRlLIg/viewform?usp=dialog'
+    registrationLink: 'https://forms.gle/dAgM35de7gbm84xXA'
     },
   ];
