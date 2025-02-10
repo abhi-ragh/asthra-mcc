@@ -623,7 +623,6 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeZL49tRNejdY8ZZieJObuHcGKrL8VHOULJB9fT6lQmFGDZOQ/viewform?usp=dialog'
   },
-  /*
   {
     id: 'cadence',
     name: 'Cadence',
@@ -635,7 +634,7 @@ export const events = [
     },
     prizes: {
       type: 'pool',
-      amount: 4000
+      amount: 3000
     },
     content: {
       'Description': 'Do you have the music in you? 🎼 Musaliar College\'s Asthra fest challenges you to unleash your inner musician! Cadence, the musical instrument competition, is your chance to demonstrate your virtuosity. Prepare to transform notes into magic, using your instrument as your voice and creativity as your guide. Ready to share your melody? ',
@@ -651,7 +650,6 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSctgrsP3z_kpp5L8nZrrAF1-SCtVtw2BrTuB5QkWhTSlUxMlw/viewform?usp=dialog'
   },
-  */
   {
     id: 'naach_naach',
     name: 'Naach Naach',
@@ -680,7 +678,6 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
-  /*
   {
     id: 'saregamapa',
     name: 'SAREGAMAPA',
@@ -692,7 +689,7 @@ export const events = [
     },
     prizes: {
       type: 'pool',
-      amount: 4000
+      amount: 2500
     },
     content: {
       'Description': 'Do you have the voice of a star? 🌟 Musaliar College\'s Asthra fest challenges you to showcase your vocal prowess in the Saregamapa solo singing competition!  Test your range, control, and stage presence, and prove your mastery of melody. Ready to let your voice be heard?',
@@ -708,5 +705,4 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
-  */
 ];
