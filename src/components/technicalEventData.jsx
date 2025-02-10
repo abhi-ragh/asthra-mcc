@@ -1,18 +1,6 @@
 // src/data/technicalEventData.js
 export const technicalEvents = [
   {
-    id: 'tech_talk',
-    name: 'Tech Talk',
-    poster: '/assets/Events/techtalk.png',
-    tags: ['General'],
-    content: {
-      'Description': 'Ready to launch your dream? 🚀 Musaliar College\'s Asthra fest presents a powerful Tech Talk by Franklin\'s Lectures: "How to Become a Successful Entrepreneur."  Prepare to be inspired, learn the secrets of success, and ignite your entrepreneurial spirit.  The future is yours to create. Are you ready to take the leap?',
-      'Registration':'Free for the First 60 students' 
-
-    },
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5ZJOTupjzsJqJBqiMzykWE8FGsI7oSBFBFNUjQLt7t5q0Ug/viewform?usp=dialog'
-    },
-  {
     id: 'coding_competition',
     name: 'Coding Competition',
     poster: '/assets/Events/cse/code.jpg',
