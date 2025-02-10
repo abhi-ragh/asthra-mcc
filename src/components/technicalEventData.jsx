@@ -1,9 +1,20 @@
 // src/data/technicalEventData.js
 export const technicalEvents = [
   {
+    id: 'tech_talk',
+    name: 'Tech Talk',
+    poster: '/assets/Events/techtalk.png',
+    tags: ['General'],
+    content: {
+      'Description': 'Ready to launch your dream? 🚀 Musaliar College\'s Asthra fest presents a powerful Tech Talk by Franklin\'s Lectures: "How to Become a Successful Entrepreneur."  Prepare to be inspired, learn the secrets of success, and ignite your entrepreneurial spirit.  The future is yours to create. Are you ready to take the leap?',
+      'Registration':'Free for the First 60 students' 
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5ZJOTupjzsJqJBqiMzykWE8FGsI7oSBFBFNUjQLt7t5q0Ug/viewform?usp=dialog'
+  },
+  {
     id: 'coding_competition',
     name: 'Coding Competition',
-    poster: '/assets/Events/cse/code.jpg',
+    poster: '/assets/Events/CSE/code.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 100,
@@ -31,7 +42,7 @@ export const technicalEvents = [
   {
     id: 'website_designing',
     name: 'Website Designing',
-    poster: '/assets/Events/cse/design.jpg',
+    poster: '/assets/Events/CSE/design.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 100,
@@ -68,7 +79,7 @@ export const technicalEvents = [
   {
     id: 'debugging_competition',
     name: 'Debugging Competition',
-    poster: '/assets/Events/cse/fix.jpg',
+    poster: '/assets/Events/CSE/fix.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 50,
@@ -100,7 +111,7 @@ export const technicalEvents = [
   {
     id: 'task_master',
     name: 'Task Master',
-    poster: '/assets/Events/cse/task.jpg',
+    poster: '/assets/Events/CSE/task.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 50,
@@ -129,7 +140,7 @@ export const technicalEvents = [
   {
     id: 'cloning_competition',
     name: 'Cloning Competition',
-    poster: '/assets/Events/cse/mirror.jpg',
+    poster: '/assets/Events/CSE/mirror.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 50,
@@ -160,7 +171,7 @@ export const technicalEvents = [
   {
     id: 'lights_camera_action',
     name: 'Lights, Camera, Action!',
-    poster: '/assets/Events/cse/lights.jpg',
+    poster: '/assets/Events/CSE/lights.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
       amount: 50,
@@ -189,7 +200,7 @@ export const technicalEvents = [
   {
     id: 'squid_game',
     name: 'Squid Game',
-    poster: '/assets/Events/ece/squid.jpg',
+    poster: '/assets/Events/ECE/squid.jpg',
     tags: ['ECE','E-Hearts'],
     registrationFee: {
       amount: '50',
