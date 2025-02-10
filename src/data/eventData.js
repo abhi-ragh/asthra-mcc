@@ -601,7 +601,7 @@ export const events = [
     poster: '/assets/Events/elocution.png',
     tags: ['General','Day 3 | Feb 25','Off-stage'],
     registrationFee: {
-      amount: '50',
+      amount: '150',
       perTeam: false
     },
     prizes: {
@@ -622,5 +622,87 @@ export const events = [
       ],
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeZL49tRNejdY8ZZieJObuHcGKrL8VHOULJB9fT6lQmFGDZOQ/viewform?usp=dialog'
+  },
+  {
+    id: 'cadence',
+    name: 'Cadence',
+    poster: '/assets/Events/cadence.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
     },
+    prizes: {
+      type: 'pool',
+      amount: 4000
+    },
+    content: {
+      'Description': 'Do you have the music in you? 🎼 Musaliar College\'s Asthra fest challenges you to unleash your inner musician! Cadence, the musical instrument competition, is your chance to demonstrate your virtuosity. Prepare to transform notes into magic, using your instrument as your voice and creativity as your guide. Ready to share your melody? ',
+      'Rules And Regulation': [
+        "Open to individuals.",
+        "Participants can choose from classical, contemporary, or folk instruments.",
+        "Participants must bring their own instruments.",
+        "The use of backing tracks or pre-recorded music is not allowed.",
+        "Time limit is 5 minutes.",
+        "The decision of the judges will be final.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSctgrsP3z_kpp5L8nZrrAF1-SCtVtw2BrTuB5QkWhTSlUxMlw/viewform?usp=dialog'
+  },
+  {
+    id: 'naach_naach',
+    name: 'Naach Naach',
+    poster: '/assets/Events/naach.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 4000
+    },
+    content: {
+      'Description': 'Ready to groove with your bestie? 😉 Musaliar College\'s Asthra fest\'s Naach Naach competition is your chance to shine! From synchronized steps to dazzling displays, let your dance do the talking. Think you\'ve got the moves to win?',
+      'Rules And Regulation': [
+        "Open to individuals.",
+        "Each team must consist of two dancers.",
+        "Performance should be between 3 to 6 minutes.",
+        "Track in MP3 format, which is accessible by the university via a universal aux cable in mobile and also should be in a pendrive, must be submitted to coordinators at least 1 hour prior to the performance.",
+        "The decision of judges will be final.",
+        "Any kind of fluid, flame, breakable items, and extremely heavy objects are not allowed.",
+        "Any dance style is allowed.",
+        "Participants should bring their college ID card."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
+  },
+  {
+    id: 'saregamapa',
+    name: 'SAREGAMAPA',
+    poster: '/assets/Events/saregama.png',
+    tags: ['General','Day 3 | Feb 25','Off-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 4000
+    },
+    content: {
+      'Description': 'Do you have the voice of a star? 🌟 Musaliar College\'s Asthra fest challenges you to showcase your vocal prowess in the Saregamapa solo singing competition!  Test your range, control, and stage presence, and prove your mastery of melody. Ready to let your voice be heard?',
+      'Rules And Regulation': [
+        "Participants will not be allowed to refer to the lyrics while singing.",
+        "Participants are supposed to sing all types of songs except mashup.",
+        "Time limit is 5 minutes.",
+        "Participants exceeding the time limit will be disqualified.",
+        "Decision of the judges will be final.",
+        "Karaoke should be in MP3 format, which is accessible by the universal aux cable in mobile and also should be in a pen drive, and it must be submitted to the coordinators at least 30 minutes prior to the performances.",
+        "Participants are requested to carry their ID card of their respective colleges."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
+  },
 ];
