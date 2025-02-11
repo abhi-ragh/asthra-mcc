@@ -48,7 +48,7 @@ export const technicalEvents = [
     },
     prizes: {
       type: 'pool',
-      amount: 2000
+      amount: 1500
     },
     content: {
       'Description': 'Forge your creativity into code! 🔥Unleash your design skills at EVOLVE\'s Design Forge.Craft a website that wows, and claim the crown of creativity! 🏆Are you ready to design the future? 💻✨',
@@ -85,7 +85,7 @@ export const technicalEvents = [
     },
     prizes: {
       type: 'pool',
-      amount: 2000
+      amount: 1500
     },
     content: {
       'Description': 'Unleash your coding prowess at EVOLVE! 🚀Race against time, crack the challenges, and emerge as the ultimate code champion. 🏆Are you ready to evolve your skills? 💻✨',
@@ -133,35 +133,6 @@ export const technicalEvents = [
       ],
     },
     registrationLink: 'https://forms.gle/6KNrL7LYL7LsoWV97'
-    },
-  {
-    id: 'task_master',
-    name: 'Task Master',
-    poster: '/assets/Events/CSE/task.jpg',
-    tags: ['CSE','Evolve'],
-    registrationFee: {
-      amount: 50,
-      perTeam: false
-    },
-    prizes: {
-      type: 'pool',
-      amount: 1000
-    },
-    content: {
-      'Description': 'Master the tasks, capture the flag! 🚩Prove your skills in speed, logic, and precision at EVOLVE.Complete the challenges, claim the crown, and become the ultimate Taskmaster! 🏆Are you ready to take on the challenge? 💻✨',
-      'Rules And Regulation': [
-        'Participants will be provided with unique challenges (e.g., typing speed, database query challenge etc.).',
-        'The competition focuses on speed, accuracy, and problem-solving skills across multiple tasks.',
-        'Participants must complete all challenges in the given order or as specified by the organizers.',
-        'The first participant to complete all challenges successfully will be declared the winner.',
-        'Participants must work individually. Collaboration or sharing of solutions is strictly prohibited.',
-        'Participants must not use any unauthorized tools or assistance that violate the competition rules.',
-        'Any form of malpractice will result in immediate disqualification.',
-        'Certificates will be provided for the participants.',
-        'Participants should bring their ID card and report 1 hour before the event.'
-      ],
-    },
-    registrationLink: 'https://forms.gle/dXKgjvb31JY3fCaX7'
     },
   {
     id: 'cloning_competition',
