@@ -706,6 +706,88 @@ export const events = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
   {
+    id: 'spot_dubbing',
+    name: 'Spot Dubbing',
+    poster: '/assets/Events/Dub.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 2500
+    },
+    content: {
+      'Description': 'Ready to lend your voice to the stars? 🌟 Musaliar College\'s Asthra fest\'s Boll Bachchan competition is your chance to shine!  From side-splitting comedy to heart-pounding drama, the scenes are waiting for your unique touch. Think you\'ve got the magic touch? ',
+      'Rules And Regulation': [
+        "Participants must choose their own video clips.",
+        "Clips can be from movies, cartoons, anime, or any other source.",
+        "The duration of the video must be within 2-4 minutes.",
+        "The selected clip must not contain pre-existing dubbed dialogues, only visuals with muted audio, and should be submitted to coordinators at least 1 hour prior to the event.",
+        "Dubbing can be done in Malayalam and English.",
+        "Participants are requested to carry their ID card of their respected colleges.",
+        "Decision of the judges will be final."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSePBQ35W6Ldx7KJjzUywYkcsT9hz1Zj6RbCBdxq0nvwRqshbw/viewform?usp=dialog'
+  },
+  {
+    id: 'stand_up_comedy',
+    name: 'Stand Up Comedy',
+    poster: '/assets/Events/standup.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 3000
+    },
+    content: {
+      'Description': 'Got jokes? 🤔 Musaliar College\'s Asthra fest challenges you to Mazak!  This is your chance to showcase your comedic timing, your observational humor, and your ability to make people laugh until they cry.  Ready to take the stage?',
+      'Rules And Regulation': [
+        "It is an individual competition.",
+        "Time limit is 5 minutes.",
+        "There will be negative marks if the participants exceed the time limit.",
+        "No participant can point out any individual or religion in any way, and any dual-meaning obscene content is strictly not allowed.",
+        "Participants are requested to carry their ID card of their respected colleges for registration.",
+        "Participants should report their presence at least 2 hours before the event starts.",
+        "The decision of the judges will be final."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScS8za-CPh2k_7e5B1dc5btT7UPp1DTJUyKrWuC3FMui7ig5Q/viewform?usp=dialog'
+  },
+  {
+    id: 'rap_battle',
+    name: 'Rap Battle',
+    poster: '/assets/Events/rap.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 3500
+    },
+    content: {
+      'Description': 'Think you\'ve got bars? 🔥 Musaliar College\'s Asthra fest challenges you to step up and prove it! Gully Boy, the rap battle competition, is here! Sharpen your rhymes, perfect your delivery, and prepare to go head-to-head with the best. Ready to spit your truth? ',
+      'Rules And Regulation': [
+        "Time limit is 6 minutes.",
+        "Can use any accompaniment like backing track, beatboxing, etc.",
+        "The rapper is not allowed to use promotes or sexually suggestive lyrics, it is punishable by disqualification.",
+        "Extra points for own composition (any language).",
+        "Originals, covers, own compositions with or without backing tracks are allowed.",
+        "Freestyling isn't compulsory for everyone.",
+        "Participants are requested to carry their ID card of their respected colleges for registration.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdQMXKRTr7Zj1dVhOsuwcfVaXu5EPEjkOhElcNmUoDv3J5tKw/viewform'
+  },
+  {
     id: 'fashion_show',
     name: 'Fashion Show',
     poster: '/assets/Events/fashion.png',
