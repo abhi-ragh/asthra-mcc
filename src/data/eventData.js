@@ -705,4 +705,34 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
   },
+  {
+    id: 'fashion_show',
+    name: 'Fashion Show',
+    poster: '/assets/Events/fashion.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 50000
+    },
+    content: {
+      'Description': 'Ready to slay the runway? 💃🕺 Musaliar College\'s Asthra fest brings you Fashion Fresco, the fashion competition that will set the stage on fire! Showcase your unique style, express your creativity, and compete for the title of fashion royalty.  Prepare to turn heads and steal the show!',
+      'Rules And Regulation': [
+        "A minimum of 12 participants are allowed per team. In addition, there should be one person in charge for the music and one for the lights.",
+        "One of the crew members should be near the sound engineers at the time of their performance.",
+        "Time limit is 7 to 10 minutes.",
+        "There will be negative marks if the participants exceed the time limit.",
+        "Participants should report their presence at least 2 hours before events start.",
+        "Background track should be in MP3 format and is to be submitted at the PC desk 30 minutes prior to the event.",
+        "Presenting banners, posters, or other materials directly displaying the theme is prohibited.",
+        "The decision of the judges will be final.",
+        "Green room will be provided if necessary.",
+        "Participants are requested to carry their ID card of their respective colleges for registration."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScKJMBz2zdgR-9vO00UVFIppw6tpqtPWreIzHOTaTVIpTPP3A/viewform?usp=dialog'
+  },
 ];
