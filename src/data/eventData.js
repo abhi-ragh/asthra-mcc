@@ -788,6 +788,66 @@ export const events = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdQMXKRTr7Zj1dVhOsuwcfVaXu5EPEjkOhElcNmUoDv3J5tKw/viewform'
   },
   {
+    id: 'solo_dance',
+    name: 'Solo Dance',
+    poster: '/assets/Events/atrangi.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 2500
+    },
+    content: {
+      'Description': 'Where rhythm meets expression! ✨ Musaliar College\'s Asthra fest invites you to Atrangi, a solo dance competition that celebrates the beauty of movement and the power of emotion. Prepare to transform the stage into your personal canvas, using your body as your brush and dance as your paint. Ready to create a masterpiece? ',
+      'Rules And Regulation': [
+        "Participants can choose any track of their own choice.",
+        "Time limits of track should be about 3 to 7 minutes.",
+        "Additional 2 minutes are provided for stage setting.",
+        "Track in mp3 format which is accessible by the university by the universal aux cable in mobile and also should be in pendrive must be submitted to coordinators at least 1 hour prior to the performance.",
+        "The decision of judges will be final.",
+        "No vulgarities will be tolerated in the performance or costume.",
+        "Any kind of fluid, flame, breakable items, extremely heavy objects are not allowed.",
+        "Interaction with audience through any properties that are used in stage while performing is allowed.",
+        "Participants should bring their college ID card."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfa6SNVDcsNRCCmxSDcfZ5UCRw3aRs2i4IlG4L5tpE4X0wszQ/viewform?usp=dialog'
+  },
+  {
+    id: 'raja_rani',
+    name: 'Raja Rani',
+    poster: '/assets/Events/raja.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 2000
+    },
+    content: {
+      'Description': 'Can you bring the romance? ✨ Musaliar College\'s Asthra fest challenges you to embody the spirit of Raja and Rani! The Raja Rani Mr. and Mrs. Actor Competition is your chance to showcase your acting prowess. Prepare to transport the audience to another world, using your talent as your guide. Ready to steal the show?',
+      'Rules And Regulation': [
+        "Participants may be given a specific theme or genre.",
+        "Competitors may be required to perform a monologue or a short scene.",
+        "Each performance should adhere to a fixed duration.",
+        "Languages permitted are Malayalam and English.",
+        "Decision of the judges will be final.",
+        "Participants should report their presence at least 1 hour before event starts.",
+        "Participants should bring their college ID card."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeWnDB-8ren6kWcAxrrwMN8e5iKH069t_8SgLaPTnZXumqLsA/viewform?usp=dialog'
+  },
+
+
+
+
+  {
     id: 'fashion_show',
     name: 'Fashion Show',
     poster: '/assets/Events/fashion.png',
