@@ -843,7 +843,36 @@ export const events = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeWnDB-8ren6kWcAxrrwMN8e5iKH069t_8SgLaPTnZXumqLsA/viewform?usp=dialog'
   },
-
+  {
+    id: 'damakka',
+    name: 'Damakka',
+    poster: '/assets/Events/damakka.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 3500
+    },
+    content: {
+      'Description': 'Ready to unleash your inner movie star? ✨ Musaliar College\'s Asthra fest\'s Damakka competition is your chance to shine! From hilarious comedies to intense dramas, bring your favorite scenes to life with your own unique style. Think you\'ve got what it takes to steal the show?',
+      'Rules And Regulation': [
+        "Participants must recreate a scene from a movie of their choice.",
+        "Only team participation allowed.",
+        "The recreated scene should be within 4-6 minutes.",
+        "Participants are encouraged to use appropriate costumes and props to enhance realism.",
+        "The recreation should stay true to the original scene.",
+        "No dangerous stunts, fire, or weapons allowed.",
+        "Content should not promote violence, discrimination, or inappropriate behavior.",
+        "Decision of the judges will be final.",
+        "Participants are requested to carry their ID card of their respected colleges.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSewn9XDgh-EBE5EVqvLCtUQ5s-7rHz1WTy9IxsRpUY9087BJQ/viewform?usp=dialog'
+  },
 
 
 
