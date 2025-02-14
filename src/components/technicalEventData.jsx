@@ -220,4 +220,26 @@ export const technicalEvents = [
     },
     registrationLink: 'https://forms.gle/dAgM35de7gbm84xXA'
     },
+
+    {
+      id: 'paper_presentation',
+      name: 'Paper Presentation',
+      poster: '/assets/Events/BME/paper.jpg',
+      tags: ['BME','Techycardia'],
+      registrationFee: {
+        amount: 50,
+        perTeam: false
+      },
+      prizes: {
+        type: 'pool',
+        amount: 1900
+      },
+      content: {
+        'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
+        'Team Size': 'Minimum 2, Maximum 4',
+        'Abstract Submission Deadline': '21th February 2025 (to be uploaded via the registration link)',
+        'Step up, speak out, and let your ideas make an impact at TECHYCARDIA 3.0, held under ASTHRA\'25!' : ''
+      },
+      registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
+      },
   ];
