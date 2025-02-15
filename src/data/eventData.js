@@ -874,7 +874,62 @@ export const events = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSewn9XDgh-EBE5EVqvLCtUQ5s-7rHz1WTy9IxsRpUY9087BJQ/viewform?usp=dialog'
   },
 
+  {
+    id: 'dance_deewani',
+    name: 'Dance Deewani',
+    poster: '/assets/Events/dance.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 5000
+    },
+    content: {
+      'Description': 'Do you have the rhythm in your soul? ✨ Musaliar College\'s Asthra fest challenges you to Dance Deewani! Showcase your choreographic brilliance, express your creativity through movement, and mesmerize the audience with your talent. Ready to set the stage on fire?',
+      'Rules And Regulation': [
+        "The competition is open to solo dancers.",
+        "Participants will be given a random song or mix of songs on the spot.",
+        "They must adapt their choreography spontaneously to the given music.",
+        "Decision of the judges will be final.",
+        "Participants should report their presence at least 1 hour before the event starts.",
+        "Participants should bring their college ID card."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdq_oeLmZru8pPf-GDy33zssNfVZKGtB91i1FLN7kR0XQsirw/viewform?usp=dialog'
+  },
 
+  {
+    id: 'choreonite',
+    name: 'Choreonite',
+    poster: '/assets/Events/choreonite.png',
+    tags: ['General','Day 3 | Feb 25','On-stage'],
+    registrationFee: {
+      amount: '150',
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 40000
+    },
+    content: {
+      'Description': 'Ready to bust a move? 😉 Musaliar College\'s Asthra fest\'s Coreografia is your chance to shine! From hip-hop to classical, let your body do the talking. Think you\'ve got the magic touch?',
+      'Rules And Regulation': [
+        "Group should comprise of at least 12 members.",
+        "Time limit for every team should be 12 minutes. Event is strictly time bound.",
+        "Soundtrack should be in MP3 format which is accessible by the universal aux cable in mobile and also should be in pen drive and it must be submitted to the coordinators at least 30 minutes prior to the performance.",
+        "Any kind of fluid, flame, breakable objects and extremely heavy objects are not allowed on stage.",
+        "Any violation of rules will lead to disqualification.",
+        "The decision of the judges will be final.",
+        "At least 3 students in the crew must carry their ID cards.",
+        "Green room will be provided if necessary.",
+        "Participants should report their presence at least 1 hour before the event starts."
+      ],
+    },
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe0HYU__XLMsBh-TnITMuyiplVrmdx6n4BDlfZgdGKVDEMbMw/viewform?usp=dialog'
+  },
 
   {
     id: 'fashion_show',
@@ -894,7 +949,7 @@ export const events = [
       'Rules And Regulation': [
         "A minimum of 12 participants are allowed per team. In addition, there should be one person in charge for the music and one for the lights.",
         "One of the crew members should be near the sound engineers at the time of their performance.",
-        "Time limit is 7 to 10 minutes.",
+        "Time limit should be minimum of 8 minutes and maximum of 30 minutes.",
         "There will be negative marks if the participants exceed the time limit.",
         "Participants should report their presence at least 2 hours before events start.",
         "Background track should be in MP3 format and is to be submitted at the PC desk 30 minutes prior to the event.",

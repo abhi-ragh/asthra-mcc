@@ -219,36 +219,153 @@ export const technicalEvents = [
       ],
     },
     registrationLink: 'https://forms.gle/dAgM35de7gbm84xXA'
+  },
+  {
+    id: 'paper_presentation',
+    name: 'Paper Presentation',
+    poster: '/assets/Events/BME/paper.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
     },
+    prizes: {
+      type: 'pool',
+      amount: 1900
+    },
+    content: {
+      'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
+      'Guidelines' : [
+        'Team Size : Minimum 2, Maximum 4',
+        'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
+        'Abstracts (max 300 words) must be submitted by February 21, 2025.',
+        'Presentations lasts between 5 to 10 minutes',
+        'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
+        'Presentations should cover the introduction, methodology, results, and conclusion.',
+        'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
+        'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
+        'Ensure proper citations for references and follow the conference’s code of conduct.',
+      ],
+      'Step up, speak out, and let your ideas make an impact at TECHYCARDIA 3.0, held under ASTHRA\'25!' : ''
+    },
+    registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
+  },
 
-    {
-      id: 'paper_presentation',
-      name: 'Paper Presentation',
-      poster: '/assets/Events/BME/paper.jpg',
-      tags: ['BME','Techycardia'],
-      registrationFee: {
-        amount: 50,
-        perTeam: false
-      },
-      prizes: {
-        type: 'pool',
-        amount: 1900
-      },
-      content: {
-        'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
-        'Guidelines' : [
-          'Team Size : Minimum 2, Maximum 4',
-          'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
-          'Abstracts (max 300 words) must be submitted by February 21, 2025.',
-          'Presentations lasts between 5 to 10 minutes',
-          'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
-          'Presentations should cover the introduction, methodology, results, and conclusion.',
-          'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
-          'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
-          'Ensure proper citations for references and follow the conference’s code of conduct.',
-        ],
-        'Step up, speak out, and let your ideas make an impact at TECHYCARDIA 3.0, held under ASTHRA\'25!' : ''
-      },
-      registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
-      },
-  ];
+  {
+    id: 'autocad_competition',
+    name: 'AutoCAD Competition',
+    poster: '/assets/Events/CE/cad.jpg',
+    tags: ['CE','Civil','Archinova'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1500
+    },
+    content: {
+      'Description': 'Unleash your design mastery at CAD CLASH! 🎯Draft, design, and dominate the ultimate AutoCAD challenge. 🏆Can you outdraw the competition and claim the title? 🖥',
+      'Guidelines' : [
+        "The competition will last 1.30 hours.",
+        "Participants can bring their own laptops with AutoCAD installed, or systems will be provided.",
+        "A set of 2D drafting and 3D modeling challenges of varying difficulty will be given.",
+        "Participants must work individually - no collaboration or sharing of designs.",
+        "Pre-made templates or external resources (e.g., online CAD libraries) are not allowed.",
+        "Any form of plagiarism or malpractice will result in immediate disqualification.",
+        "Certificates will be awarded to all participants.",
+        "Participants must bring their ID card and report 1 hour before the event."
+      ],
+    },
+    registrationLink: ''
+  },
+
+  {
+    id: 'paper_presentation',
+    name: 'Paper Presentation',
+    poster: '/assets/Events/CE/paper.jpg',
+    tags: ['CE','Civil','Archinova'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1000
+    },
+    content: {
+      'Description': 'Showcase your brilliance at INNOVATE! 🚀Present your groundbreaking ideas, impress the panel, and make your vision a reality. 🌟Do you have what it takes to stand out? 💡',
+      'Guidelines' : [
+        "Each team can have a maximum of 2 members.",
+        "Presentation time: 10 minutes (+5 minutes for Q&A).",
+        "Participants must prepare a PowerPoint (PPT) or visual aid for their presentation.",
+        "Working prototypes/models are encouraged but not mandatory.",
+        "Judging will be based on innovation, feasibility, clarity, and presentation skills.",
+        "Participants must submit their presentation files 30 minutes before the event.",
+        "Certificates will be awarded to all participants.",
+        "Participants must bring their ID card and report 1 hour before the event."
+      ],
+    },
+    registrationLink: ''
+  },
+
+  {
+    id: 'quiz_competition',
+    name: 'Quiz Competition',
+    poster: '/assets/Events/CE/quiz.jpg',
+    tags: ['CE','Civil','Archinova'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1000
+    },
+    content: {
+      'Description': 'Think fast, build smart! 🏗🧠Test your civil engineering knowledge at CIVIQUEST! 📖⚙Do you have what it takes to be the ultimate quiz champion? 🏆',
+      'Guidelines' : [
+        "Each team can have a maximum of 2 members.",
+        "The quiz will consist of multiple rounds (e.g., MCQs, rapid-fire, etc.).",
+        "Questions will be based on civil engineering concepts, general knowledge, and problem-solving skills.",
+        "Use of mobile phones, calculators, or external help is strictly prohibited.",
+        "Negative marking may be applied in certain rounds.",
+        "If a team fails to answer within the given time, the question will be passed to the next team.",
+        "Any form of malpractice will lead to immediate disqualification.",
+        "Certificates will be awarded to all participants.",
+        "Participants must bring their ID card and report 1 hour before the event."
+      ],
+    },
+    registrationLink: ''
+  },
+
+  
+  {
+    id: 'bridge_designing',
+    name: 'Bridge Designing',
+    poster: '/assets/Events/CE/bridge.jpg',
+    tags: ['CE','Civil','Archinova'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 2000
+    },
+    content: {
+      'Description': 'Design. Build. Conquer. 🏗Put your engineering skills to the test at BRIDGECRAFT! 🌉Can your bridge withstand the ultimate challenge? ⚙',
+      'Guidelines' : [
+        "Each team can have a maximum of 2 members.",
+        "Teams will be given materials to construct their bridge (materials will be provided).",
+        "Time limit: 1 hour to build the bridge.",
+        "The bridge will be evaluated based on design, strength, stability, and load-bearing capacity.",
+        "No external materials or pre-built structures are allowed.",
+        "Any form of malpractice or rule violation will lead to disqualification.",
+        "Certificates will be awarded to all participants.",
+        "Participants must bring their ID card and report 1 hour before the event."
+      ],
+    },
+    registrationLink: ''
+  },
+];
