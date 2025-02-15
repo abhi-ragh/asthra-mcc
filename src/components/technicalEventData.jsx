@@ -38,6 +38,35 @@ export const technicalEvents = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHwhDCZq80BQA5taVjfTa5jFD1n2NdYI5uCuXkXHSJCRlLIg/viewform?usp=dialog'
   },
   {
+    id: 'bme_paper_presentation',
+    name: 'Paper Presentation',
+    poster: '/assets/Events/BME/paper.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1900
+    },
+    content: {
+      'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
+      'Guidelines' : [
+        'Team Size : Minimum 2, Maximum 4',
+        'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
+        'Abstracts (max 300 words) must be submitted by February 21, 2025.',
+        'Presentations lasts between 5 to 10 minutes',
+        'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
+        'Presentations should cover the introduction, methodology, results, and conclusion.',
+        'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
+        'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
+        'Ensure proper citations for references and follow the conference’s code of conduct.',
+      ],
+    },
+    registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
+  },
+  {
     id: 'website_designing',
     name: 'Website Designing',
     poster: '/assets/Events/CSE/design.jpg',
@@ -221,37 +250,6 @@ export const technicalEvents = [
     registrationLink: 'https://forms.gle/dAgM35de7gbm84xXA'
   },
   {
-    id: 'paper_presentation',
-    name: 'Paper Presentation',
-    poster: '/assets/Events/BME/paper.jpg',
-    tags: ['BME','Techycardia'],
-    registrationFee: {
-      amount: 50,
-      perTeam: false
-    },
-    prizes: {
-      type: 'pool',
-      amount: 1900
-    },
-    content: {
-      'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
-      'Guidelines' : [
-        'Team Size : Minimum 2, Maximum 4',
-        'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
-        'Abstracts (max 300 words) must be submitted by February 21, 2025.',
-        'Presentations lasts between 5 to 10 minutes',
-        'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
-        'Presentations should cover the introduction, methodology, results, and conclusion.',
-        'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
-        'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
-        'Ensure proper citations for references and follow the conference’s code of conduct.',
-      ],
-      'Step up, speak out, and let your ideas make an impact at TECHYCARDIA 3.0, held under ASTHRA\'25!' : ''
-    },
-    registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
-  },
-
-  {
     id: 'autocad_competition',
     name: 'AutoCAD Competition',
     poster: '/assets/Events/CE/cad.jpg',
@@ -279,9 +277,8 @@ export const technicalEvents = [
     },
     registrationLink: ''
   },
-
   {
-    id: 'paper_presentation',
+    id: 'ce_paper_presentation',
     name: 'Paper Presentation',
     poster: '/assets/Events/CE/paper.jpg',
     tags: ['CE','Civil','Archinova'],
@@ -308,7 +305,6 @@ export const technicalEvents = [
     },
     registrationLink: ''
   },
-
   {
     id: 'quiz_competition',
     name: 'Quiz Competition',
@@ -338,8 +334,6 @@ export const technicalEvents = [
     },
     registrationLink: ''
   },
-
-  
   {
     id: 'bridge_designing',
     name: 'Bridge Designing',
