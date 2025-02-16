@@ -275,7 +275,7 @@ export const technicalEvents = [
         "Participants must bring their ID card and report 1 hour before the event."
       ],
     },
-    registrationLink: ''
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSecO1sm1F5hmuGQGwpsYI24VUXerGVfA93ATNOSQj4py7fv9g/viewform?usp=header'
   },
   {
     id: 'ce_paper_presentation',
@@ -303,7 +303,7 @@ export const technicalEvents = [
         "Participants must bring their ID card and report 1 hour before the event."
       ],
     },
-    registrationLink: ''
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeFGWmohsViAZUy3ZAupWUwIL3G6wbElJN0JwSwysZ22hVB7w/viewform?usp=header'
   },
   {
     id: 'quiz_competition',
@@ -332,7 +332,7 @@ export const technicalEvents = [
         "Participants must bring their ID card and report 1 hour before the event."
       ],
     },
-    registrationLink: ''
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdn_Tc2UAO1b23l6tv-2B3a3WY5fdpVNNv-mGUnDAwjO2fveg/viewform?usp=header'
   },
   {
     id: 'bridge_designing',
@@ -360,6 +360,6 @@ export const technicalEvents = [
         "Participants must bring their ID card and report 1 hour before the event."
       ],
     },
-    registrationLink: ''
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfkXYlh0tz1bIqt96IhDe-M7p_AnFTfT13IlWRp6JRgfVz8cQ/viewform?usp=header'
   },
 ];
