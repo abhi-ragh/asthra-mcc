@@ -38,35 +38,6 @@ export const technicalEvents = [
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHwhDCZq80BQA5taVjfTa5jFD1n2NdYI5uCuXkXHSJCRlLIg/viewform?usp=dialog'
   },
   {
-    id: 'bme_paper_presentation',
-    name: 'Paper Presentation',
-    poster: '/assets/Events/BME/paper.jpg',
-    tags: ['BME','Techycardia'],
-    registrationFee: {
-      amount: 50,
-      perTeam: false
-    },
-    prizes: {
-      type: 'pool',
-      amount: 1900
-    },
-    content: {
-      'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
-      'Guidelines' : [
-        'Team Size : Minimum 2, Maximum 4',
-        'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
-        'Abstracts (max 300 words) must be submitted by February 21, 2025.',
-        'Presentations lasts between 5 to 10 minutes',
-        'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
-        'Presentations should cover the introduction, methodology, results, and conclusion.',
-        'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
-        'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
-        'Ensure proper citations for references and follow the conference’s code of conduct.',
-      ],
-    },
-    registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
-  },
-  {
     id: 'website_designing',
     name: 'Website Designing',
     poster: '/assets/Events/CSE/design.jpg',
@@ -249,6 +220,160 @@ export const technicalEvents = [
     },
     registrationLink: 'https://forms.gle/dAgM35de7gbm84xXA'
   },
+
+  {
+    id: 'bme_paper_presentation',
+    name: 'Paper Presentation',
+    poster: '/assets/Events/BME/paper.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1900
+    },
+    content: {
+      'Description': 'Think, Present, Impress! COLLOQUIUM challenges budding innovators to showcase their research, ideas, and technical expertise in an engaging and competitive setting. Push the boundaries of knowledge, articulate your vision, and captivate the audience with your insights!',
+      'Guidelines' : [
+        'Team Size : Minimum 2, Maximum 4',
+        'Abstract Submission Deadline : 21th February 2025 (to be uploaded via the registration link)',
+        'Abstracts (max 300 words) must be submitted by February 21, 2025.',
+        'Presentations lasts between 5 to 10 minutes',
+        'Use PowerPoint or similar software, and incorporate visual aids like graphs or images.',
+        'Presentations should cover the introduction, methodology, results, and conclusion.',
+        'Submit your slides (PDF or PowerPoint) 24 hours before the presentation.',
+        'The presentation will be judged based on clarity, depth, visual effectiveness, and adherence to time.',
+        'Ensure proper citations for references and follow the conference’s code of conduct.',
+      ],
+    },
+    registrationLink: 'https://forms.gle/WQoRbuwdvjounBqh9'
+  },
+
+  {
+    id: 'medreveal',
+    name: 'MedReveal',
+    poster: '/assets/Events/BME/medreveal.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 25,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1000
+    },
+    content: {
+      'Description': 'Explore, analyze, and decode! MedReveal is the ultimate challenge that puts your knowledge of biomedical devices to the test. Dive deep into the mechanics, functionality, and innovations of medical technology as you compete against the brightest minds in the field!',
+      'Guidelines' : [
+        'Teams can consist of a minimum of one and a maximum of two participants',
+        'Each team will be provided with a dissected biomedical device, and they must identify the internal components.',    
+        'A set of questions related to the components, functionality, and significance of the device will be provided.',   
+        'Participants must analyze the device and write precise answers within the given time limit.',    
+        'The total time allotted for the activity is 30 minutes.',  
+        'Accuracy, clarity, and completeness of answers will be evaluated.',  
+        'Handling of the device should be done with care to avoid damage.',   
+        'The team with the most correct and well-explained answers will be declared the winner.'
+      ],
+    },
+    registrationLink: 'https://forms.gle/VGZLXLNZt2NxGFQt5'
+  },
+
+  {
+    id: 'medmystery',
+    name: 'MedMystery',
+    poster: '/assets/Events/BME/medmystery.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 25,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1000
+    },
+    content: {
+      'Description': 'Diagnose, analyze, and solve! MedMystery is the ultimate medical case challenge that puts your clinical reasoning, problem-solving skills, and medical knowledge to the test. Step into the role of a medical expert, crack complex cases, and compete against the sharpest minds in the field!',
+      'Guidelines' : [
+        'Teams can have a minimum of one and a maximum of two participants',
+        'Each team will be presented with a unique medical case scenario that includes symptoms, patient history, and test results.',  
+        'The objective is to analyze the given case, identify the possible medical condition, and suggest appropriate diagnostic steps or treatments.',   
+        'Participants must submit their findings within the given 30-minute time limit.',  
+        'Logical reasoning, medical knowledge, and problem-solving skills will be key evaluation criteria.',   
+        'Use of external reference materials or digital devices is not allowed.',    
+        'Clear and well-structured answers with proper justification will score higher.',  
+        'The team with the most accurate diagnosis and reasoning will be declared the winner.'
+      ],
+    },
+    registrationLink: 'https://forms.gle/gLD8Laf29v1eLj627'
+  },
+
+  {
+    id: 'thrillvile',
+    name: 'ThrillVille',
+    poster: '/assets/Events/BME/thrillvile.jpg',
+    tags: ['BME','Techycardia'],
+    content: {
+      'Description': 'Dare to step into ThrillVille, a one-of-a-kind spooky biomedical-themed entertainment zone at TECHYCARDIA 3.0! Get ready for an electrifying fusion of thrill, science, and spine-chilling fun as we bring you an unforgettable experience packed with exciting games, eerie challenges, and interactive zones designed to test your wits and courage.',
+      'Guidelines' : [
+        'Dare to enter? Register at the gates… or be locked out forever! 🔑🚪',
+        'Obey the masters of the underworld (our coordinators)… or suffer the consequences! 🔮👁',
+        'No reckless souls! Running or pushing may awaken the lurking spirits. 👻⚰',
+        'Handle haunted props with care… Some might not like being touched! 🕷🖤',
+        'Beat the ticking clock… Escape before the darkness swallows you whole! ⏳💀',
+        'Only the bravest survive! Complete challenges to claim your eerie rewards. 🎁🩸',
+        'Respect the haunted grounds—or risk becoming part of them… forever. ☠🏚',
+        'Laugh, scream, and enjoy… But beware—you’re never truly alone. 👀🎃',
+        '💀 Register before entering… if you dare'
+      ],
+    },
+  },
+
+  {
+    id: 'organ_odyssey',
+    name: 'Organ Odyssey',
+    poster: '/assets/Events/BME/organ.jpg',
+    tags: ['BME','Techycardia'],
+    content: {
+      'Description': 'Step into the fascinating world of human anatomy with Organ Odyssey, an immersive experience that brings the intricacies of the human body to life! As part of TECHYCARDIA 3.0, this recreated Anatomy Hall will showcase detailed models of human organs, organ systems, and their functions, offering an insightful journey into the marvels of biomedical science.',
+      'What to Expect?' : [
+        'Explore lifelike representations of major human organs and systems.',
+        'Understand the structure, function, and importance of each organ.',
+        'Engage in interactive learning experiences designed for students and enthusiasts alike.'
+      ],
+    },
+  },
+
+  {
+    id: 'buried_treasure',
+    name: 'Buried Treasure',
+    poster: '/assets/Events/BME/buried.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 50,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 1000
+    },
+    content: {
+      'Description': 'Decode, discover, and dominate! BURIED RICHES is the ultimate treasure hunt that will put your teamwork, problem-solving skills, and quick thinking to the test. Embark on an exhilarating adventure, solve mind-bending clues, and race against time to uncover hidden riches!',
+      'Guidelines' : [
+        'Teams must consist of a minimum of 2 and a maximum of 4 participants.',
+        'The treasure hunt will include multiple stages with puzzles, riddles, and interactive challenges.',    
+        'Each clue will lead to the next location, testing problem-solving skills and teamwork.',      
+        'Participants must carefully follow the instructions provided for each challenge.',     
+        'The use of external help, mobile phones, or the internet is strictly prohibited.',      
+        'Teams must complete the hunt within the given time to be eligible for winning.',   
+        'Clues may involve logical reasoning, general knowledge, and physical tasks.',     
+        'The team that successfully finds the final treasure first will be declared the winner.'
+      ],
+    },
+    registrationLink: 'https://forms.gle/KVdSrJBJqfbvHNCs8'
+  },
+
   {
     id: 'autocad_competition',
     name: 'AutoCAD Competition',
