@@ -153,7 +153,7 @@ export const technicalEvents = [
     poster: '/assets/Events/CSE/design.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
-      amount: 100,
+      amount: 50,
       perTeam: false
     },
     prizes: {
@@ -190,7 +190,7 @@ export const technicalEvents = [
     poster: '/assets/Events/CSE/code.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
-      amount: 100,
+      amount: 50,
       perTeam: false
     },
     prizes: {
@@ -310,7 +310,7 @@ export const technicalEvents = [
     poster: '/assets/Events/CSE/mini.jpg',
     tags: ['CSE','Evolve'],
     registrationFee: {
-      amount: 100,
+      amount: 50,
       perTeam: false
     },
     prizes: {
