@@ -320,7 +320,7 @@ export const technicalEvents = [
     content: {
       'Description': 'Gear up, lock \'n load, and dominate the battlefield! 💥Join the Mini Militia Tournament at EVOLVE and prove your combat skills.Will you be the last one standing? 🏆Ready, set, fight! 🔫✨',
       'Rules And Regulation': [
-        'Team Size: Each team consists of 2 players.',
+        'Team Size: Each team consists of solo players.',
         'Fair Play: Teaming up with other teams outside of your squad is strictly prohibited.',
         'Device : Players must bring their own smartphones.',
         'Disconnection Rules: If a player disconnects, they may rejoin within the same match. If unable to reconnect, the match continues.',
