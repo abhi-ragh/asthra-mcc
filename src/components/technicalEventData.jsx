@@ -95,6 +95,35 @@ export const technicalEvents = [
   },
 
   {
+    id: 'poster_design_competition',
+    name: 'Poster Design Competition',
+    poster: '/assets/Events/ECE/poster.jpg',
+    tags: ['ECE','E-Hearts'],
+    registrationFee: {
+      amount: '10',
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 200 },
+      ]
+    },
+    content: {
+      'Description': 'Poster Designing Competition',
+      "Theme": "Breaking the Chains of Poverty",
+      'Rules And Regulation': [
+        "The design should be based on your own imagination/idea. Don't take other people's work.",
+        "Medium poster size.",
+        "The jury's decision cannot be changed.",
+        "Posters must be submitted by February 22nd, 2025, before 10 AM. Late submissions will be disqualified.",
+        "Announcement of winners on February 22nd, 2025."
+      ],
+    },
+    registrationLink: 'https://forms.gle/9AV4PDCTis6KHNkL6'
+  },
+
+  {
     id: 'ec_quiz_competition',
     name: 'Quiz Competition',
     poster: '/assets/Events/ECE/quiz.jpg',
