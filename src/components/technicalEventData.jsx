@@ -11,6 +11,7 @@ export const technicalEvents = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5ZJOTupjzsJqJBqiMzykWE8FGsI7oSBFBFNUjQLt7t5q0Ug/viewform?usp=dialog'
   },
+
   {
     id: 'squid_game',
     name: 'Squid Game',
@@ -37,6 +38,86 @@ export const technicalEvents = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScHwhDCZq80BQA5taVjfTa5jFD1n2NdYI5uCuXkXHSJCRlLIg/viewform?usp=dialog'
   },
+
+  {
+    id: 'project_presentation',
+    name: 'Project Presentation',
+    poster: '/assets/Events/ECE/project.jpg',
+    tags: ['ECE','E-Hearts'],
+    registrationFee: {
+      amount: '10',
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 500 },
+      ]
+    },
+    content: {
+      'Description': 'Join with us to showoff your skills regarding the project demo presentation.',
+      'Rules And Regulation': [
+        "Time Limit : 10-20 minutes + Q&A",
+        "Team Size : 2-5 members (as per event guidelines)",
+        "Language : English (or as specified)",
+        "Originality & Authenticity : Project must be original; borrowed content must be properly cited"
+      ],
+    },
+    registrationLink: 'https://forms.gle/a5K2D5WudqW5EhqM9'
+  },
+
+  {
+    id: 'ec_paper_presentation',
+    name: 'Paper Presentation',
+    poster: '/assets/Events/ECE/paper.jpg',
+    tags: ['ECE','E-Hearts'],
+    registrationFee: {
+      amount: '10',
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 500 },
+      ]
+    },
+    content: {
+      'Description': 'Join with us to showoff your skills regarding the project demo presentation.',
+      'Rules And Regulation': [
+        "Time Limit : 10-15 minutes presentation + Q&A",
+        "Format : PPT, PDF, or any approved slide format",
+        "Originality : Must be original, with proper citations",
+        "Language : English",
+        "Team Size : 2-3 members max"
+      ],
+    },
+    registrationLink: 'https://forms.gle/9AV4PDCTis6KHNkL6'
+  },
+
+  {
+    id: 'ec_quiz_competition',
+    name: 'Quiz Competition',
+    poster: '/assets/Events/ECE/quiz.jpg',
+    tags: ['ECE','E-Hearts'],
+    registrationFee: {
+      amount: '0',
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 200 },
+      ]
+    },
+    content: {
+      'Description': 'Quiz Related to Electronics',
+      'Rules And Regulation': [
+
+      ],
+    },
+    registrationLink: 'https://forms.gle/ZobqrknJJJte7RZi7'
+  },
+
   {
     id: 'website_designing',
     name: 'Website Designing',

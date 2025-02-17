@@ -24,9 +24,9 @@ const PrizeDisplay = ({ prizes }) => {
         {prizes.distribution.map((prize, index) => (
           <div key={index} className="prize-item">
             <div className="prize-position">
-              {prize.position === 1 && '🥇'}
-              {prize.position === 2 && '🥈'}
-              {prize.position === 3 && '🥉'}
+              {prize.position === 1 && '1st:'}
+              {prize.position === 2 && '2nd:'}
+              {prize.position === 3 && '3rd:'}
               {prize.position > 3 && `${prize.position}th`}
             </div>
             <div className="prize-amount">₹{prize.amount.toLocaleString()}</div>
