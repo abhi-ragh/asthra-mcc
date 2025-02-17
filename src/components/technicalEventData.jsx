@@ -141,7 +141,10 @@ export const technicalEvents = [
     content: {
       'Description': 'Quiz Related to Electronics',
       'Rules And Regulation': [
-
+        "Team Formation: Participants can compete individually.",
+        "Eligibility: Any department students can participate (or as per event guidelines).",
+        "Time Limit: Each round/question will have a specified time limit for answering.",
+        "Fair Play: No use of mobile phones, calculators, or any external help during the quiz."
       ],
     },
     registrationLink: 'https://forms.gle/ZobqrknJJJte7RZi7'

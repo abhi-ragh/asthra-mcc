@@ -1180,3 +1180,117 @@ section {
     padding: 0.5rem 0;
   }
 }
+/* Floating Ticket Notification */
+.floating-ticket-notification {
+  position: fixed;
+  right: -300px;
+  top: 80px;  /* Changed from bottom to top */
+  width: 280px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 12px 0 0 12px;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  z-index: 1000;
+  transition: right 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-left: 3px solid #ff6b35;
+  color: white;
+}
+
+.floating-ticket-notification.visible {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  animation: float 3s ease-in-out infinite;
+}
+
+.notification-text {
+  flex: 1;
+}
+
+.notification-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.notification-btn {
+  display: inline-block;
+  background: #ff6b35;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.notification-btn:hover {
+  background: #ff8c35;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .floating-ticket-notification {
+    width: calc(100% - 20px); /* Take full width minus margins */
+    max-width: 280px; /* Maximum width */
+    right: -100%; /* Start fully off-screen */
+    margin-right: 10px; /* Add some margin from the edge */
+    top: 50px; /* Adjust top position for mobile */
+  }
+
+  .floating-ticket-notification.visible {
+    right: 10px; /* Show with margin */
+  }
+
+  .notification-icon {
+    width: 40px; /* Smaller icon for mobile */
+  }
+
+  .notification-text h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .notification-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

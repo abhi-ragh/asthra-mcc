@@ -9,6 +9,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, Instagram, MapPin } from 'lucide-react';
+import FloatingTicketNotification from './FloatingTicketNotification';
 
 const Home = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -200,6 +201,16 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             </div>
           </div>
 
+          {/* Gifting Partner */}
+          <div className="silver-section">
+            <h2 className="silver">Gifting Partner</h2>
+            <div className="sponsor-grid">
+                <div className="sponsor-item silver-sponsor">
+                  <img src='/assets/logos/myop.jpg' alt='myop' /> 
+                </div>
+            </div>
+          </div>
+
           {/* Silver Sponsors */}
           <div className="silver-section">
             <h2 className="silver">Silver Sponsors</h2>
@@ -250,6 +261,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           </div>
         </div>
       </div>
+      <FloatingTicketNotification />
     </div>
   );
 };
