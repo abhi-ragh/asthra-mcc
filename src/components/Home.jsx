@@ -216,7 +216,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <h2 className="silver">Silver Sponsors</h2>
             <div className="sponsor-grid">
                 <div className="sponsor-item silver-sponsor">
-                  <img src='/assets/logos/bhima.png' alt='Coming Soon' />
+                 { /* <img src='/assets/logos/bhima.png' alt='Coming Soon' /> */ }
                 </div>
             </div>
           </div>
