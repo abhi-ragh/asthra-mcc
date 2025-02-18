@@ -215,12 +215,9 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           <div className="silver-section">
             <h2 className="silver">Silver Sponsors</h2>
             <div className="sponsor-grid">
-              {[1, 2, 3, 4, 5].map((index) => (
-                <div key={index} className="sponsor-item silver-sponsor">
-                  { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
-                  <h6> Coming Soon</h6>
+                <div className="sponsor-item silver-sponsor">
+                  <img src='/assets/logos/bhima.png' alt='Coming Soon' />
                 </div>
-              ))}
             </div>
           </div>
         </div>
