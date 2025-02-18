@@ -600,4 +600,136 @@ export const technicalEvents = [
     },
     registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfkXYlh0tz1bIqt96IhDe-M7p_AnFTfT13IlWRp6JRgfVz8cQ/viewform?usp=header'
   },
+
+  {
+    id: 'caccia_gusto',
+    name: 'Caccia Gusto',
+    poster: '/assets/Events/FT/cacia.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 20,
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 1500 },
+      ]
+    },
+    content: {
+      'Description': 'Are you ready to dive into the world of flavours? FOODOMECHS , where food meets tech ,in association with ASTHRA 2K25, the  techno-cultural fest of Musaliar College Of Engineering, presents  Caccia Gusto  – a Food identification Competition.',
+      'Why Us':' Participating in this competition will not only be a fun and engaging experience, but it will also help you develop essential skills in food analysis, identification, and quality control. You’ll get to learn about different ingredients, their textures, flavors, and aromas, and how to identify them accurately.Plus, you’ll get to compete with your peers, network with industry professionals, and win exciting prizes!',
+      'Guidelines' : [
+        'Team consist of two members.',
+        'Competition will be of three rounds',
+        'First round will be logo identification.', 
+        'Second round will be touching.',
+        'Third round will be tasting.',
+        'Spot registration will be provided',
+        'Mobile phones are strictly prohibited.', 
+        'Participants should bring ID card and report before 1 hour.',
+        'There would be time limit for between 24 3 3 levels.',
+        'In second round and three round the participants were blindfolded.', 
+        'Participants gets two chances to touching the sample and tasting.',     
+      ],
+    },
+    registrationLink: 'https://surveyheart.com/form/67a246c1019da868b9737c6e'
+  },
+
+  {
+    id: 'food_explorer',
+    name: 'Food Explorer',
+    poster: '/assets/Events/FT/food.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 20,
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 1500 },
+      ]
+    },
+    content: {
+      'Description': '👨‍🍳 FOODOMECHS – Where Food Meets Tech! 🌟 In association with ASTHRA 2K25, the ultimate Techno-Cultural Fest of Musaliar College of Engineering, we bring you Food Explorer – a thrilling Reel Competition! 📢 Think you can bust food myths with science? Now’s your chance to prove it! Create a 1-minute Instagram Reel debunking common food myths with solid scientific facts. 🍽🔍',
+      'Why Us':' Participating in this competition will not only be a fun and engaging experience, but it will also help you develop essential skills in food analysis, identification, and quality control. You’ll get to learn about different ingredients, their textures, flavors, and aromas, and how to identify them accurately.Plus, you’ll get to compete with your peers, network with industry professionals, and win exciting prizes!',
+      'Guidelines' : [
+        'Max Duration: 1 Minute',
+        'Format: Vertical (9:16) for Instagram Reels',
+        'Original Content Only – No plagiarism',
+        'Solo or Team Participation (Max: 3 members)',
+        'Content: The reel should focus on debunking one common food myth using scientific facts.'
+      ],
+      'Structure' : [
+        'Introduce the Myth (e.g.: "Ajinomoto (MSG) is poisonous and causes health issues.")',
+        'Provide Scientific Explanation (e.g: "MSG is scientifically safe when consumed in normal amounts. The so-called \'Chinese Restaurant Syndrome\' is largely a myth with no strong scientific backing.")',
+        'Use research, experiments, or expert opinions.',
+        'Demonstration (if possible)',
+        'Show proof, comparisons, or visual facts to demonstrate the scientific truth.'
+      ]
+    },
+    registrationLink: 'https://surveyheart.com/form/67a1ac7b8d1bca0c1b789115'
+  },
+  
+  {
+    id: 'tech_bite',
+    name: 'Tech Bite',
+    poster: '/assets/Events/FT/tech.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 30,
+      perTeam: false
+    },
+    prizes: {
+      type: 'individual',
+      distribution: [
+        { position: 1, amount: 1500 },
+      ]
+    },
+    content: {
+      'Description': '👨‍🍳 FOODOMECHS – Where Food Meets Tech! 🌟 In association with ASTHRA 2K25, the ultimate Techno-Cultural Fest of Musaliar College of Engineering, we bring you Food Explorer – a thrilling Reel Competition! 📢 Think you can bust food myths with science? Now’s your chance to prove it! Create a 1-minute Instagram Reel debunking common food myths with solid scientific facts. 🍽🔍',
+      'Why Us':' Participating in this competition will not only be a fun and engaging experience, but it will also help you develop essential skills in food analysis, identification, and quality control. You’ll get to learn about different ingredients, their textures, flavors, and aromas, and how to identify them accurately.Plus, you’ll get to compete with your peers, network with industry professionals, and win exciting prizes!',
+      'Guidelines' : [
+        'Maximum duration 30 minutes.',
+        'A team must contain 5 participants.',
+        'One person at a time.',
+        'Everyone in the group must be talked.',
+        'Topics will be announced in advance and will allow time for doing research .',
+        'Teams will present their arguments, with each speaker having a time of 3-5 minutes.',
+        'Each team will introduce themselves and present their opening statement.',
+        'Teams will respond to opposing teams arguments',
+        'Each team will summarize their arguments.',
+      ],
+    },
+    registrationLink: 'https://surveyheart.com/form/67a242ae019da868b9733da8'
+  },
+
+  {
+    id: 'nutritrack',
+    name: 'NutriTrack',
+    poster: '/assets/Events/FT/nutri.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 25,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: '',
+    },
+    content: {
+      'Description': 'Are you ready to take charge of your health? "FOODOMECHS", where food meets tech, in association with "ASTHRA 2K25", the techno-cultural fest of "Musaliar College of Engineering", presents "Nutritional Assessment Outlet"– a dedicated space to evaluate and understand your nutritional status.  ',
+      'Why Visit': 'Understanding your "body composition, BMI, and fat percentage"is crucial for a "healthier lifestyle". This assessment will help you gain insights into your health metrics, identify areas for improvement, and make informed dietary choices.',
+      'Guidelines' : [
+        'Follow given timings strictly',
+        'Wear light clothing for accurate results',
+        'Avoid food/drinks 30 mins before assessment',
+        'Medical conditions? Inform us for better accuracy',
+        'Data is confidential & for program use only',
+        'Volunteers are available for assistance',
+      ],
+    },
+  },
+
 ];
