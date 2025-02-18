@@ -488,6 +488,35 @@ export const technicalEvents = [
   },
 
   {
+    id: 'bme_quiz_competition',
+    name: 'Quiz Competition',
+    poster: '/assets/Events/BME/quiz.jpg',
+    tags: ['BME','Techycardia'],
+    registrationFee: {
+      amount: 25,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: 750
+    },
+    content: {
+      'Description': 'Think fast, answer smart! BIOWIZ challenges your technical knowledge, problem-solving skills, and teamwork in an exciting quiz competition. Put your expertise to the test and compete against the brightest minds in the field!',
+      'Guidelines' : [
+        'Teams should contain 2 members',
+        'The quiz consists of two rounds: a preliminary round and a final round.',   
+        'The preliminary round will have a mix of multiple-choice and short-answer questions, with a time limit of 10 minutes.',    
+        'Top-performing teams from the preliminary round will qualify for the final round.',
+        'The final round will be a rapid-fire session with 10 minutes to answer a set of challenging technical questions.',    
+        'Questions will cover various topics related to biomedical engineering, healthcare technology, and medical sciences.',
+        'Use of external reference materials or digital devices is not allowed during the quiz.',
+        'The team with the highest score in the final round will be declared the winner.',
+      ],
+    },
+    registrationLink: 'https://forms.gle/gSFhqM5pn7fuxyS69'
+  },
+
+  {
     id: 'autocad_competition',
     name: 'AutoCAD Competition',
     poster: '/assets/Events/CE/cad.jpg',
