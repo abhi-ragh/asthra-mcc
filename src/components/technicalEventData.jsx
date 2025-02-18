@@ -111,7 +111,7 @@ export const technicalEvents = [
     },
     content: {
       'Description': 'Poster Designing Competition',
-      "Theme": "Breaking the Chains of Poverty",
+      "Theme": "Electronic Revolution",
       'Rules And Regulation': [
         "The design should be based on your own imagination/idea. Don't take other people's work.",
         "Medium poster size.",
@@ -120,7 +120,7 @@ export const technicalEvents = [
         "Announcement of winners on February 22nd, 2025."
       ],
     },
-    registrationLink: 'https://forms.gle/9AV4PDCTis6KHNkL6'
+    registrationLink: 'https://forms.gle/w9qD2DnNmaBP22mp9'
   },
 
   {
