@@ -761,4 +761,62 @@ export const technicalEvents = [
     },
   },
 
+  {
+    id: 'innovision',
+    name: 'Innovision',
+    poster: '/assets/Events/FT/innovision.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 10,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: '1500',
+    },
+    content: {
+      'Description': 'Do you have any ideas that revolutionize the food industry ? FOODOMECHS , in association with ASTHRA 2K25 presents Innovision - Start up  conclave to showcase your ideas .',
+      'Presentation Structure' : [
+        'Title Slide: ✅Title  ✅Tagline ✅Presenter\'s Names & Roles',
+        'Problem Statement: ✅Clearly define the specific issue, significance and relevance of the problem.',
+        'Solution: ✅Describe your innovative product or service. ✅Highlight the advanced technologies utilized.',
+        'Conclusion & Call to Action: ✅Summarize key points of your presentation.',
+        'Additional Tips: Visual Aids - Use clear visuals to support your points and maintain audience engagement. | Consistency: Maintain a consistent theme and design throughout the slides.',
+      ],
+    },
+    registrationLink: 'https://surveyheart.com/form/67a249b0019da868b973a5ab'
+  },
+
+  {
+    id: 'innovate_elevate',
+    name: 'Innovate And Elevate',
+    poster: '/assets/Events/FT/innovate.jpg',
+    tags: ['FT','Food Technology'],
+    registrationFee: {
+      amount: 10,
+      perTeam: false
+    },
+    prizes: {
+      type: 'pool',
+      amount: '750',
+    },
+    content: {
+      'Description': 'Just-a-Minute Startup Idea Session 🚀 | Interdepartmental Event | 🎤 1-Minute Idea Pitch',
+      'Rules And Guidelines' : [
+        'Present a startup or theme-based idea in 1 minute',
+        'Short prep time before presenting',
+        'Solo or team participation allowed',
+        'Original ideas only – No plagiarism or malpractices',
+        'Clear, creative, and feasible ideas win the edge!',
+        'Judges’ decision is final',
+      ],
+      'Judging Criteria': [
+        'Creativity & Uniqueness',
+        'Clarity & Presentation',
+        'Feasibility & Impact',
+      ]      
+    },
+    registrationLink: 'https://surveyheart.com/form/67a1be3b8d1bca0c1b79ac02'
+  },
+
 ];
