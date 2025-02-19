@@ -676,7 +676,7 @@ export const events = [
         "Participants should bring their college ID card."
       ],
     },
-    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScELg4lH0wAwfjXvrgmkvt6lhWNwgyEX709LX9JTTCNo5pAyg/viewform?usp=dialog'
+    registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScUThS2FFb90yi3EmVerBc6gESSRSNfa7PdWrbE118Es6usRQ/viewform?usp=sharing'
   },
   {
     id: 'saregamapa',
