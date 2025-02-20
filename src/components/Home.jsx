@@ -256,7 +256,6 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
           </div>
         </div>
       </div>
-      <FloatingTicketNotification />
     </div>
   );
 };

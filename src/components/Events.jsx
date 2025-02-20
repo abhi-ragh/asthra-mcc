@@ -33,19 +33,6 @@ const Events = () => {
 
   return (
     <div className="events">
-      <div className="tickets-live-banner">
-          <div className="tickets-content">
-            <h2 className='ticket-events-h2'>TICKETS ARE LIVE!</h2>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScG1nOsJ1hFjq3U7dfoqYpG24joCJgpDDqnz2t4cE3nPNcAng/viewform?usp=dialog" className="register-btn pulse">
-              Get Your Tickets Now
-            </a>
-          </div>
-          <img 
-            src="/assets/images/ticket.png" 
-            alt="Event Ticket" 
-            className="floating-ticket" 
-          />
-      </div>
       <div className="event-type-buttons">
         <button 
           className={eventType === 'technical' ? 'active' : ''}
