@@ -187,19 +187,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
                 <h6> Coming Soon</h6>
               </div>
             </div>
-          </div>
-
-          {/* Gold Sponsors */}
-          <div className="gold-section">
-            <h2 className="gold">Gold Sponsors</h2>
-            <div className="sponsor-grid">
-              <div className="sponsor-item gold-sponsor">
-              { /*<img src='/assets/images/googe.png' alt='Coming Soon' /> */}
-                <h6> Coming Soon</h6>
-              </div>
-              {/* Add more gold sponsors */}
-            </div>
-          </div>
+          </div> 
 
           {/* Gifting Partner */}
           <div className="silver-section">
@@ -211,12 +199,22 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             </div>
           </div>
 
+          {/* Banking Partner */}
+          <div className="silver-section">
+            <h2 className="silver">Banking Partner</h2>
+            <div className="sponsor-grid">
+                <div className="sponsor-item banking-sponsor">
+                  <img src='/assets/logos/canara.jpg' alt='myop' /> 
+                </div>
+            </div>
+          </div>
+
           {/* Silver Sponsors */}
           <div className="silver-section">
             <h2 className="silver">Silver Sponsors</h2>
             <div className="sponsor-grid">
                 <div className="sponsor-item silver-sponsor">
-                 { /* <img src='/assets/logos/bhima.png' alt='Coming Soon' /> */ }
+                 <img src='/assets/logos/bhima.png' alt='Coming Soon' /> 
                 </div>
             </div>
           </div>
