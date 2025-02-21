@@ -619,7 +619,8 @@ section {
 }
 
 .silver-sponsor img {
-  max-width: 300px;
+  max-width: 150px;
+  margin: 2em;
 }
 
 /* Grid Adjustments */

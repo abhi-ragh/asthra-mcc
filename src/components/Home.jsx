@@ -215,6 +215,7 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <div className="sponsor-grid">
                 <div className="sponsor-item silver-sponsor">
                  <img src='/assets/logos/bhima.png' alt='Coming Soon' /> 
+                 <img src='/assets/logos/IPCS.png' alt='Coming Soon' /> 
                 </div>
             </div>
           </div>
@@ -225,6 +226,8 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
             <div className="sponsor-grid">
                 <div className="sponsor-item silver-sponsor">
                  <img src='/assets/logos/matix.jpg' alt='Coming Soon' /> 
+                 <img src='/assets/logos/alamana.png' alt='Coming Soon' />
+                 <img src='/assets/logos/patron.png' alt='Coming Soon' />  
                 </div>
             </div>
           </div>
