@@ -218,6 +218,16 @@ Step into Asthra, where the future is not just imagined—it’s engineered, per
                 </div>
             </div>
           </div>
+
+          {/* Event Sponsors */}
+          <div className="silver-section">
+            <h2 className="silver">Event Sponsors</h2>
+            <div className="sponsor-grid">
+                <div className="sponsor-item silver-sponsor">
+                 <img src='/assets/logos/matix.jpg' alt='Coming Soon' /> 
+                </div>
+            </div>
+          </div>
         </div>
 
       <div 
